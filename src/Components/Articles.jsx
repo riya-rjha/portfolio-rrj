@@ -7,6 +7,9 @@ const Articles = () => (
       {[
         { title: 'Design Unraveled', image: '/images/design-unraveled.png', description: 'Design Unraveled: Behind the Scenes of UI/UX Magic', date: '10 Nov, 2023' },
         { title: 'Loan Management', image: '/images/loan-management.png', description: 'Sugee: Loan Management System for Rural Sector', date: '8 Oct, 2023' },
+        { title: 'Cinetrade', image: '/images/cinetrade.png', description: 'Cinetrade: Innovative way to invest in Digital Media', date: '15 Aug, 2023' },
+        { title: 'Design Unraveled', image: '/images/design-unraveled.png', description: 'Design Unraveled: Behind the Scenes of UI/UX Magic', date: '10 Nov, 2023' },
+        { title: 'Loan Management', image: '/images/loan-management.png', description: 'Sugee: Loan Management System for Rural Sector', date: '8 Oct, 2023' },
         { title: 'Cinetrade', image: '/images/cinetrade.png', description: 'Cinetrade: Innovative way to invest in Digital Media', date: '15 Aug, 2023' }
       ].map((article, index) => (
         <div key={index} className="bg-white shadow-md rounded p-4">

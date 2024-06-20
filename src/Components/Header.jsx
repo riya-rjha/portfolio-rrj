@@ -13,7 +13,7 @@ const Header = () => {
   };
 
   return (
-    <header className="flex justify-between items-center p-4 bg-gray-900 text-white">
+    <header className="sticky top-0 flex justify-between items-center p-4 bg-gray-900 text-white">
       <div className="text-lg font-bold">RRJ</div>
       <div className="md:hidden">
         <button
@@ -47,9 +47,6 @@ const Header = () => {
           </li>
           <li className="hover:underline">
             <a href="#about">About</a>
-          </li>
-          <li className="hover:underline">
-            <a href="#services">Services</a>
           </li>
           <li className="hover:underline">
             <a href="#resume">Resume</a>
