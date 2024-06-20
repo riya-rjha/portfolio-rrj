@@ -16,10 +16,7 @@ const Header = () => {
     <header className="sticky top-0 flex justify-between items-center p-4 bg-gray-900 text-white">
       <div className="text-lg font-bold">RRJ</div>
       <div className="md:hidden">
-        <button
-          onClick={toggleMenu}
-          className="text-white focus:outline-none"
-        >
+        <button onClick={toggleMenu} className="text-white focus:outline-none">
           {isOpen ? (
             <p></p>
           ) : (
@@ -43,14 +40,14 @@ const Header = () => {
       <nav className="hidden md:flex">
         <ul className="flex space-x-4 text-sm md:text-base">
           <li className="hover:underline">
-            <a href="#home">Home</a>
+            <a href="/">Home</a>
           </li>
           <li className="hover:underline">
             <a href="#about">About</a>
           </li>
-          <li className="hover:underline">
-            <a href="#resume">Resume</a>
-          </li>
+            <li className="hover:underline">
+              <a target="_blank" href="https://drive.google.com/file/d/17Yu6ILYwPcngY1b9iyE4NFjJopGMe1Kp/view">Resume</a>
+            </li>
           <li className="hover:underline">
             <a href="#projects">Projects</a>
           </li>

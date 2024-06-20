@@ -6,11 +6,13 @@ import Experience from './Components/Experience';
 import Articles from './Components/Articles';
 import Testimonials from './Components/Testimonials';
 import Footer from './Components/Footer';
+import AboutUs from './Components/About';
 
 const App = () => (
   <div className="font-sans">
     <Header />
     <Main />
+    <AboutUs/>
     <Projects />
     <Experience />
     <Articles />
