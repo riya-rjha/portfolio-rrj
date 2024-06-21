@@ -2,7 +2,7 @@ import React from "react";
 import bgImage from "../Images/bg.png";
 
 const Main = () => (
-  <main className="text-center p-4 md:p-8">
+  <main className="text-center p-4 md:p-8 ">
     <h1 className="text-3xl sm:text-3xl md:text-5xl font-bold my-2 md:my-4 text-orange-500 flex items-center justify-center flex-col">
       <span className="mt-2">I'm Riya Ranjan Jha,</span>
       <br /> <span className="text-black -mt-8 mb-6 ">Front End Developer</span>
@@ -11,9 +11,9 @@ const Main = () => (
       <div className="flex flex-col items-center lg:items-start">
         <h1 className="text-4xl head-ing">"</h1>
         <div className="bg-gray-200 text-black p-4 rounded-md text-center lg:text-left">
-          Expolore my LinkedIn profile for a comprehensive Portfolio featuring
+          Explore my LinkedIn profile for a comprehensive Portfolio featuring
           my projects in various domains & achievements. Let's connect on
-          LinkedIn for collaboration opportunities!
+          LinkedIn for collaborations!
         </div>
         <h1 className="text-4xl head-ing-2 mt-3">"</h1>
       </div>
@@ -22,11 +22,12 @@ const Main = () => (
         className="rounded-full m-auto w-40 h-40 sm:w-60 sm:h-60 shadow-2xl"
         alt="Profile"
       />
+      
       <div className="flex flex-col items-center lg:items-end">
         <h1 className="text-4xl head-ing">"</h1>
         <div className="bg-gray-200 text-black p-4 rounded-md text-center lg:text-right">
           Hey there! This is your proof reading wizard, an extensive coder with
-          development maestros & a figmatic touch of UI & UX in every field.
+          development maestros & a figmatic touch of UI & UX in every field & a lot of codes .
           Let's connect on Twitter for more opportunities!
         </div>
         <h1 className="text-4xl head-ing-2 mt-3">"</h1>

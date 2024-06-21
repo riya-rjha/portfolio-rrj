@@ -70,7 +70,7 @@ const Header = () => {
           {lightTheme ? (
             <li
               onClick={handleTheme}
-              className="relative top-2 cursor-pointer "
+              className="relative right-2 top-2 cursor-pointer "
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

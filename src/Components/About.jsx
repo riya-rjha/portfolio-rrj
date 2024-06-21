@@ -5,10 +5,10 @@ const AboutUs = () => {
   return (
     <section
       id="about"
-      className="bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 text-black  py-10"
+      className=" text-black  py-10 m-8 rounded-lg bg-white"
     >
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-black font- text-center mb-8">About Me</h2>
+        <h2 className="text-4xl all-headings text-center mb-8">About Me</h2>
         <div className="grid items-center grid-cols-1 md:grid-cols-2 gap-8">
           <p>
             <div className="flex flex-col justify-center">

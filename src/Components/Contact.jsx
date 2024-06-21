@@ -22,8 +22,8 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="p-8 text-gray-900">
-      <h2 className="text-3xl font-bold mb-4">Leave Your Feedback</h2>
+    <section id="contact" className="p-8 text-gray-900">
+      <h2 className="text-3xl font-bold mb-4 all-headings">Any Feedbacks?</h2>
       <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="flex flex-col">
           <label htmlFor="name" className="font-bold mb-1 text-orange-800">Your Name</label>
@@ -34,7 +34,7 @@ const Testimonials = () => {
             value={formData.name}
             onChange={handleChange}
             required
-            className="p-3 bg-gray-100 border border-transparent rounded focus:outline-none focus:ring-2 focus:ring-orange-600 focus:border-transparent"
+            className="p-3 bg-gray-100 border-2 border-gray-400 rounded focus:outline-none focus:ring-2 focus:ring-orange-600 focus:border-transparent"
           />
         </div>
         <div className="flex flex-col">
@@ -46,7 +46,7 @@ const Testimonials = () => {
             value={formData.email}
             onChange={handleChange}
             required
-            className="p-3 bg-gray-100 border border-transparent rounded focus:outline-none focus:ring-2 focus:ring-orange-600 focus:border-transparent"
+            className="p-3 bg-gray-100 border-2 border-gray-400 rounded focus:outline-none focus:ring-2 focus:ring-orange-600 focus:border-transparent"
           />
         </div>
         <div className="flex flex-col col-span-2">
@@ -57,8 +57,7 @@ const Testimonials = () => {
             value={formData.message}
             onChange={handleChange}
             required
-            rows={4}
-            className="p-3 bg-gray-100 border border-transparent rounded focus:outline-none focus:ring-2 focus:ring-orange-600 focus:border-transparent w-full"
+            className="p-3 bg-gray-100 border-2 border-gray-400 rounded focus:outline-none focus:ring-2 focus:ring-orange-600 focus:border-transparent w-full"
           />
         </div>
         <div className="col-span-2 flex justify-end">
