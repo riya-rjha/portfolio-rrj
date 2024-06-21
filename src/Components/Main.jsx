@@ -1,4 +1,5 @@
 import React from "react";
+import bgImage from "../Images/bg.png";
 
 const Main = () => (
   <main className="text-center p-4 md:p-8">
@@ -6,28 +7,45 @@ const Main = () => (
       <span className="mt-2">I'm Riya Ranjan Jha,</span>
       <br /> <span className="text-black -mt-8 mb-6 ">Front End Developer</span>
     </h1>
-    <p className="text-gray-700 text-sm md:text-base mt-4">
-      I'm Riya Ranjan Jha, a Java programmer with a passion for learning and a
-      positive attitude. While I have experience in design and development, I'm
-      currently expanding my skillset by exploring UI/UX design and Next.js.
-      Beyond the field of programming, I take immense pride in my exceptional
-      communication skills and enjoy refining these skills through
-      extracurricular activities such as Technical Content Writing, Debates &
-      Classical Singing. Currently, I am deeply involved in Front End
-      Development while learning Web3 is on my radar. I also have a good command
-      over Data Structures & Algorithms. 
-      Programming ignites the innovation in
-      me & my Technical Content Writing skill lights the way. With countless
-      errors in my codes, I am always ready to embrace the challenges my
-      programming journey brings for me!
-    </p>
-    <div className="flex flex-col md:flex-row justify-center mt-4 space-y-2 md:space-y-0 md:space-x-4">
-      <button className="bg-orange-500 text-white py-2 px-4 rounded">
-        Portfolio
-      </button>
-      <button className="bg-gray-900 text-white py-2 px-4 rounded">
-        Hire me
-      </button>
+    <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-20">
+      <div className="flex flex-col items-center lg:items-start">
+        <h1 className="text-4xl head-ing">"</h1>
+        <div className="bg-gray-200 text-black p-4 rounded-md text-center lg:text-left">
+          Expolore my LinkedIn profile for a comprehensive Portfolio featuring
+          my projects in various domains & achievements. Let's connect on
+          LinkedIn for collaboration opportunities!
+        </div>
+        <h1 className="text-4xl head-ing-2 mt-3">"</h1>
+      </div>
+      <img
+        src={bgImage}
+        className="rounded-full m-auto w-40 h-40 sm:w-60 sm:h-60 shadow-2xl"
+        alt="Profile"
+      />
+      <div className="flex flex-col items-center lg:items-end">
+        <h1 className="text-4xl head-ing">"</h1>
+        <div className="bg-gray-200 text-black p-4 rounded-md text-center lg:text-right">
+          Hey there! This is your proof reading wizard, an extensive coder with
+          development maestros & a figmatic touch of UI & UX in every field.
+          Let's connect on Twitter for more opportunities!
+        </div>
+        <h1 className="text-4xl head-ing-2 mt-3">"</h1>
+      </div>
+    </div>
+    <div className="flex flex-col md:flex-row items-center justify-between mt-4 space-y-2 md:space-y-0 md:space-x-4">
+      <a
+        href="https://www.linkedin.com/in/riya-ranjan-jha-751688249/"
+        target="_blank"
+      >
+        <button className="bg-orange-500 text-white py-3 px-8 text-xl rounded hover:bg-orange-700 transition delay-75">
+          Portfolio
+        </button>
+      </a>
+      <a href="https://x.com/RiyaJha25892" target="_blank">
+        <button className="bg-gray-900 text-white py-3 px-8 text-xl rounded hover:bg-gray-600  transition delay-75">
+          Hire me
+        </button>
+      </a>
     </div>
   </main>
 );

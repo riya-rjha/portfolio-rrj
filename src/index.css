@@ -1,17 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+FR+Trad:wght@100..400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+FR+Trad:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Poppins;
+  scroll-behavior: smooth;
 }
 
-.logo-name{
+.logo-name {
   font-family: "Playwrite FR Trad", cursive;
   font-optical-sizing: auto;
   font-weight: 900;
   font-size: 40px;
+}
+
+.head-ing {
+  font-family: "Passion One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  transform: scale(-1, 1);
+}
+
+.head-ing-2 {
+  font-family: "Passion One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 @tailwind base;

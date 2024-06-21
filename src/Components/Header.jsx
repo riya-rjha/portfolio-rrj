@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 
-
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [lightTheme, setLightTheme] = useState(true);
@@ -60,10 +59,10 @@ const Header = () => {
             </a>
           </li>
           <li className="hover:underline p-2 hover:bg-[#F97316] hover:rounded-[50px]">
-            <a href="#projects">Projects</a>
+            <a href="#project">Projects</a>
           </li>
           <li className="hover:underline p-2 hover:bg-[#F97316] hover:rounded-[50px]">
-            <a href="#projects">Socials</a>
+            <a href="#project">Socials</a>
           </li>
           <li className="hover:underline p-2 hover:bg-[#F97316] hover:rounded-[50px]">
             <a href="#contact">Contact</a>
@@ -91,7 +90,7 @@ const Header = () => {
           ) : (
             <li
               onClick={handleTheme}
-              className="relative top-2 cursor-pointer "
+              className="relative right-3 top-2 cursor-pointer "
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

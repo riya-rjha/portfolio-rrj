@@ -1,39 +1,33 @@
 import React from "react";
+import bg from "../Images/image.png";
 
 const AboutUs = () => {
   return (
-    <section className="bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 text-white py-16">
+    <section
+      id="about"
+      className="bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 text-black  py-10"
+    >
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-8">About Us</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <h2 className="text-4xl font-black font- text-center mb-8">About Me</h2>
+        <div className="grid items-center grid-cols-1 md:grid-cols-2 gap-8">
           <p>
             <div className="flex flex-col justify-center">
               <p className="mb-4 text-lg">
-                We are a team of passionate developers and designers dedicated
-                to creating beautiful and functional websites and applications.
-                Our mission is to deliver high-quality solutions that meet the
-                needs of our clients and exceed their expectations.
-              </p>
-              <p className="mb-4 text-lg">
-                With a focus on innovation and excellence, we strive to stay
-                ahead of the curve in the ever-evolving world of technology. Our
-                team is committed to continuous learning and growth, ensuring
-                that we always bring the best to our projects.
-              </p>
-              <p className="text-lg">
-                We believe in the power of collaboration and communication,
-                working closely with our clients to bring their visions to life.
-                Thank you for considering us for your next project. We look
-                forward to working with you!
+                I'm Riya Ranjan Jha, a Java programmer with a passion for
+                learning and a positive attitude. While I have experience in
+                design and development, I'm currently expanding my skillset by
+                exploring UI/UX design and Next.js. Programming ignites the
+                innovation in me & my Technical Content Writing skill lights the
+                way. With countless errors in my codes, I am always ready to
+                embrace the challenges my programming journey brings for me!
               </p>
             </div>
           </p>
           <p>
             <div className="flex justify-center">
               <img
-                src="https://via.placeholder.com/400"
-                alt="About Us"
-                className="rounded-lg shadow-lg"
+                src={bg}
+                className="rounded-lg shadow-lg w-[350px] h-[300px]"
               />
             </div>
           </p>
