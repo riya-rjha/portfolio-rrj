@@ -11,9 +11,9 @@ const Main = () => (
       <div className="flex flex-col items-center lg:items-start">
         <h1 className="text-4xl head-ing">"</h1>
         <div className="bg-gray-200 text-black p-4 rounded-md text-center lg:text-left">
-          Explore my LinkedIn profile for a comprehensive Portfolio featuring
-          my projects in various domains & achievements. Let's connect on
-          LinkedIn for collaborations!
+          Explore my <span className="font-black text-blue-800">LinkedIn</span> profile for a
+          comprehensive Portfolio featuring my projects in various domains &
+          achievements. Let's connect on LinkedIn for collaborations!
         </div>
         <h1 className="text-4xl head-ing-2 mt-3">"</h1>
       </div>
@@ -22,13 +22,14 @@ const Main = () => (
         className="rounded-full m-auto w-40 h-40 sm:w-60 sm:h-60 shadow-2xl"
         alt="Profile"
       />
-      
+
       <div className="flex flex-col items-center lg:items-end">
         <h1 className="text-4xl head-ing">"</h1>
         <div className="bg-gray-200 text-black p-4 rounded-md text-center lg:text-right">
           Hey there! This is your proof reading wizard, an extensive coder with
-          development maestros & a figmatic touch of UI & UX in every field & a lot of codes .
-          Let's connect on Twitter for more opportunities!
+          development maestros & a figmatic touch of UI & UX in every field & a
+          lot of codes . Let's connect on{" "}
+          <span className="font-black text-blue-800">Twitter</span> for more opportunities!
         </div>
         <h1 className="text-4xl head-ing-2 mt-3">"</h1>
       </div>

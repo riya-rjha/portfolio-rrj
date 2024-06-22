@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +20,9 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 flex justify-between items-center p-4 bg-black text-white">
-      <div className="text-lg font-bold logo-name">RRJ</div>
+      <a href="">
+        <div className="text-lg font-bold logo-name">RRJ</div>
+      </a>
       <div className="md:hidden">
         <button onClick={toggleMenu} className="text-white focus:outline-none">
           {isOpen ? (
