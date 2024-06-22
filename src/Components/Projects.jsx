@@ -5,6 +5,7 @@ import RecipeApplication from "../Images/RecipeApplication.png";
 import QuoteGen from '../Images/QuoteGen.png'
 import QuizApp from '../Images/QuizApp.png'
 import EmailValid from '../Images/EmailValid.png'
+import Skills from "./Skills";
 
 const Projects = () => {
   const projects = [
@@ -88,6 +89,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
+      <Skills/>
       <h2 className="text-3xl md:text-3xl  mb-4 all-headings mt-10">
         Mini Projects
       </h2>

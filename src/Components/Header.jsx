@@ -47,9 +47,12 @@ const Header = () => {
       </div>
       <nav className="hidden md:flex">
         <ul className="flex space-x-4 text-sm md:text-base">
-          <li className="hover:underline bg-[#F97316] p-2 rounded-[50px]">
-            <a href="/">Home</a>
-          </li>
+          <a
+            href="/"
+            className="bg-[#F97316] p-2 rounded-[50px] hover:underline"
+          >
+            <li>Home</li>
+          </a>
           <li className="hover:underline p-2 hover:bg-[#F97316] hover:rounded-[50px]">
             <a href="#about">About</a>
           </li>
