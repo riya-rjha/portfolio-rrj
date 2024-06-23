@@ -12,7 +12,7 @@ const AboutUs = () => {
         <div className="grid items-center grid-cols-1 md:grid-cols-2 gap-8">
           <p>
             <div className="flex flex-col justify-center">
-              <p className="mb-4 text-lg">
+              <p className="mb-4 text-lg text-type">
                 I'm Riya Ranjan Jha, a Java programmer with a passion for
                 learning and a positive attitude. While I have experience in
                 design and development, I'm currently expanding my skillset by

@@ -6,6 +6,9 @@ import QuoteGen from "../Images/QuoteGen.png";
 import QuizApp from "../Images/QuizApp.png";
 import EmailValid from "../Images/EmailValid.png";
 import Skills from "./Skills";
+import PasswordGen from '../Images/PasswordGen.png';
+import QRCode from '../Images/QRCode.png';
+import Calculator from '../Images/Calculator.png'
 
 const Projects = () => {
   const projects = [
@@ -15,7 +18,8 @@ const Projects = () => {
       site: "https://amazon-clone-12ab-cd.netlify.app/",
       img: AmazonClone,
       description:
-        "LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
+        "A clone of the Amazon website built using React and Firebase. Features include user authentication and cart functionality.",
+      tech: "Firebase + MERN",
     },
     {
       name: "Recipe Application",
@@ -23,7 +27,8 @@ const Projects = () => {
       site: "https://recipe-app-save-create.netlify.app/",
       img: RecipeApplication,
       description:
-        "LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
+        "A web application for saving and creating recipes. Users can add, edit, and delete recipes, and browse others' recipes.",
+      tech: "MERN",
     },
     {
       name: "Book Store Website",
@@ -31,7 +36,8 @@ const Projects = () => {
       site: "https://book-services.netlify.app/",
       img: BookStoreWebsite,
       description:
-        "LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
+        "An online bookstore website featuring a catalog of books, search functionality, and a cart for purchasing books.",
+        tech: "MERN"
     },
   ];
 
@@ -41,42 +47,42 @@ const Projects = () => {
       url: "https://github.com/riya-rjha/Quote-Generator",
       img: QuoteGen,
       description:
-        "LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
+        "A simple web app that generates random quotes. Users can click to generate new quotes and share them on social media.",
     },
     {
       name: "Quiz Application",
       url: "https://github.com/riya-rjha/JS-Projects/tree/main/Quiz%20App",
       img: QuizApp,
       description:
-        "LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
+        "A quiz app built with JavaScript. Users can take quizzes on various topics, see their scores, and share results.",
     },
     {
       name: "Form Validation Application",
       url: "https://github.com/riya-rjha/JS-Projects/tree/main/Form%20Validation",
       img: EmailValid,
       description:
-        "LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
+        "A form validation app using JavaScript. Validates user inputs for email, password, and other fields before submission.",
     },
     {
       name: "QR Code Generator",
       url: "https://github.com/riya-rjha/JS-Projects/tree/main/QR%20Generator",
-      img: QuoteGen,
+      img: QRCode,
       description:
-        "LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
+        "A tool to generate QR codes dynamically. Users can input text or URLs and generate QR codes for easy sharing.",
     },
     {
       name: "Calculator",
       url: "https://github.com/riya-rjha/JS-Projects/tree/main/Calculator",
-      img: QuizApp,
+      img: Calculator,
       description:
-        "LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
+        "A basic calculator app built with HTML, CSS, and JavaScript. Supports standard arithmetic operations and displays results.",
     },
     {
       name: "Password Generator",
-      url: "https://github.com/riya-rjha/JS-Projects/tree/main/Password%20Generator ",
-      img: EmailValid,
+      url: "https://github.com/riya-rjha/JS-Projects/tree/main/Password%20Generator",
+      img: PasswordGen,
       description:
-        "LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
+        "A utility for generating secure passwords. Users can customize password length and character types to generate passwords.",
     },
   ];
 
@@ -89,23 +95,31 @@ const Projects = () => {
             key={index}
             className="bg-white shadow-md p-4 rounded hover:transform hover:scale-105 delay-100 transition-transform"
           >
-            <h3 className="text-xl font-bold mb-2">{project.name}</h3>
+            <h2 className="text-2xl mb-2 uppercase all-headings text-gray-800">{project.name}</h2>
             <img
               src={project.img}
               alt={project.name}
               className="w-full h-32 object-cover mb-2 rounded"
             />
             <div className="my-4">
-              <p className="break-all ">{project.description}</p>
+              <p className="mb-2 text-[20px]">
+                <span className="font-black text-[20px]">Tech Stack: </span>
+                {project.tech}
+              </p>
+              <p>{project.description}</p>
             </div>
             <div className="flex flex-col">
               <button className="bg-gray-800 transition delay-75 text-white py-2 px-4 rounded mt-2 hover:bg-slate-950">
-                <a href={project.url} target="_blank">
+                <a href={project.url} target="_blank" rel="noopener noreferrer">
                   View on GitHub
                 </a>
               </button>
               <button className="bg-gray-800 transition delay-75 text-white py-2 px-4 rounded mt-2 hover:bg-slate-950">
-                <a href={project.site} target="_blank">
+                <a
+                  href={project.site}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Explore Website Now
                 </a>
               </button>
@@ -118,23 +132,27 @@ const Projects = () => {
         Mini Projects
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 ">
-        {miniProjects.map((miniProjects, index) => (
+        {miniProjects.map((miniProject, index) => (
           <div
             key={index}
             className="bg-white shadow-md p-4 rounded hover:transform hover:scale-105 delay-100 transition-transform"
           >
-            <h3 className="text-xl font-bold mb-2">{miniProjects.name}</h3>
+            <h3 className="text-xl font-bold mb-2">{miniProject.name}</h3>
             <img
-              src={miniProjects.img}
-              alt={miniProjects.name}
+              src={miniProject.img}
+              alt={miniProject.name}
               className="w-full h-32 object-cover mb-2 rounded "
             />
             <div className="my-4">
-              <p className="break-all ">{miniProjects.description}</p>
+              <p className="break-all ">{miniProject.description}</p>
             </div>
             <div className="flex flex-col">
               <button className="bg-gray-800 transition delay-75 text-white py-2 px-4 rounded mt-2 hover:bg-slate-950">
-                <a href={miniProjects.url} target="_blank">
+                <a
+                  href={miniProject.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   View on GitHub
                 </a>
               </button>

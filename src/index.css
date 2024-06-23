@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+FR+Trad:wght@100..400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: 0;
@@ -32,14 +32,21 @@
 
 textarea {
   resize: none;
-  height: 100px;
+  height: 320px;
+  min-height: 100px;
   max-height: 100px;
 }
 
-.all-headings{
+.all-headings {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+@media only screen and (max-width: 770px) and (min-width: 300px) {
+  .text-type {
+    text-align: justify;
+  }
 }
 
 @tailwind base;

@@ -19,7 +19,7 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 flex justify-between items-center p-4 bg-black text-white">
+    <header className="sticky top-0 flex justify-between items-center p-4 bg-black text-white z-50">
       <a href="">
         <div className="text-lg font-bold logo-name">RRJ</div>
       </a>
@@ -47,36 +47,59 @@ const Header = () => {
       </div>
       <nav className="hidden md:flex">
         <ul className="flex space-x-4 text-sm md:text-base">
-          <a
-            href="/"
-            className="bg-[#F97316] p-2 rounded-[50px] hover:underline"
-          >
-            <li>Home</li>
-          </a>
-          <li className="hover:underline p-2 hover:bg-[#F97316] hover:rounded-[50px]">
-            <a href="#about">About</a>
+          <li>
+            <a
+              href="/"
+              className="bg-[#F97316] p-2 rounded-[50px] hover:underline"
+            >
+              Home
+            </a>
           </li>
-          <li className="hover:underline p-2 hover:bg-[#F97316] hover:rounded-[50px]">
+          <li>
+            <a
+              href="#about"
+              className="hover:underline p-2 hover:bg-[#F97316] hover:rounded-[50px]"
+            >
+              About
+            </a>
+          </li>
+          <li>
             <a
               target="_blank"
               href="https://drive.google.com/file/d/17Yu6ILYwPcngY1b9iyE4NFjJopGMe1Kp/view"
+              className="hover:underline p-2 hover:bg-[#F97316] hover:rounded-[50px]"
             >
               Resume
             </a>
           </li>
-          <li className="hover:underline p-2 hover:bg-[#F97316] hover:rounded-[50px]">
-            <a href="#project">Projects</a>
+          <li>
+            <a
+              href="#project"
+              className="hover:underline p-2 hover:bg-[#F97316] hover:rounded-[50px]"
+            >
+              Projects
+            </a>
           </li>
-          <li className="hover:underline p-2 hover:bg-[#F97316] hover:rounded-[50px]">
-            <a href="#project">Socials</a>
+          <li>
+            <a
+              href="#socials"
+              className="hover:underline p-2 hover:bg-[#F97316] hover:rounded-[50px]"
+            >
+              Socials
+            </a>
           </li>
-          <li className="hover:underline p-2 hover:bg-[#F97316] hover:rounded-[50px]">
-            <a href="#contact">Contact</a>
+          <li>
+            <a
+              href="#contact"
+              className="hover:underline p-2 hover:bg-[#F97316] hover:rounded-[50px]"
+            >
+              Contact
+            </a>
           </li>
           {lightTheme ? (
             <li
               onClick={handleTheme}
-              className="relative right-2 top-2 cursor-pointer "
+              className="relative right-2  cursor-pointer"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -96,7 +119,7 @@ const Header = () => {
           ) : (
             <li
               onClick={handleTheme}
-              className="relative right-3 top-2 cursor-pointer "
+              className="relative right-3  cursor-pointer"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -111,7 +134,7 @@ const Header = () => {
                   strokeLinejoin="round"
                   d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
                 />
-              </svg>{" "}
+              </svg>
             </li>
           )}
         </ul>
