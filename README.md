@@ -7,10 +7,10 @@
 - Sections for About, Projects, Skills, and Contact
 - Interactive elements and animations
 
-  ## Technologies used
+## Technologies used
 
-  - Javascript
-  - ReactJS
-  - TailwindCSS
+- Javascript
+- ReactJS
+- TailwindCSS
  
 The website is deployed on vercel and you can checkout the link in the project description. Let's connect through my website today. Happy Hacking!
