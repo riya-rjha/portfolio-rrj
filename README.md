@@ -13,4 +13,6 @@
 - ReactJS
 - TailwindCSS
  
-The website is deployed on vercel and you can checkout the link in the project description. Let's connect through my website today. Happy Hacking!
+The website is deployed on vercel and you can checkout the link in the project description. Let's connect through my website today. 
+
+Happy Hacking!
