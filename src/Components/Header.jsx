@@ -66,7 +66,7 @@ const Header = () => {
           <li>
             <a
               target="_blank"
-              href="https://drive.google.com/file/d/17Yu6ILYwPcngY1b9iyE4NFjJopGMe1Kp/view"
+              href="https://drive.google.com/file/d/1ZQmQpFa8dzoM6tVPccr0tD_0GrYTg4gT/view"
               className="hover:underline p-2 hover:bg-[#F97316] hover:rounded-[50px]"
             >
               Resume
@@ -82,20 +82,29 @@ const Header = () => {
           </li>
           <li>
             <a
+              href="#articles"
+              className="hover:underline p-2 hover:bg-[#F97316] hover:rounded-[50px]"
+            >
+              Articles
+            </a>
+          </li>
+          <li>
+            <a
+              href="#experience"
+              className="hover:underline p-2 hover:bg-[#F97316] hover:rounded-[50px]"
+            >
+              Experiences
+            </a>
+          </li>
+          <li>
+            <a
               href="#socials"
               className="hover:underline p-2 hover:bg-[#F97316] hover:rounded-[50px]"
             >
               Socials
             </a>
           </li>
-          <li>
-            <a
-              href="#contact"
-              className="hover:underline p-2 hover:bg-[#F97316] hover:rounded-[50px]"
-            >
-              Contact
-            </a>
-          </li>
+
           {lightTheme ? (
             <li
               onClick={handleTheme}
@@ -166,16 +175,16 @@ const Header = () => {
               <a href="#about">About</a>
             </li>
             <li className="hover:underline">
-              <a href="#services">Services</a>
+              <a href="https://drive.google.com/file/d/1ZQmQpFa8dzoM6tVPccr0tD_0GrYTg4gT/view">Resume</a>
             </li>
             <li className="hover:underline">
-              <a href="#resume">Resume</a>
+              <a href="#project">Projects</a>
             </li>
             <li className="hover:underline">
-              <a href="#projects">Projects</a>
+              <a href="#articles">Articles</a>
             </li>
             <li className="hover:underline">
-              <a href="#contact">Contact</a>
+              <a href="#experience">Experience</a>
             </li>
             {lightTheme ? (
               <li onClick={handleTheme}>Activate Dark Mode</li>

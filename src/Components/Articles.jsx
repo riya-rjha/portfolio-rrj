@@ -7,7 +7,7 @@ import DataSampling from "../Images/DataSampling.png";
 import AIChatbot from "../Images/AIchatbot.png";
 
 const Articles = () => (
-  <section className="p-4 md:p-8">
+  <section id="articles" className="p-4 md:p-8">
     <h2 className="text-2xl md:text-3xl font-bold mb-4  all-headings">
       My Articles
     </h2>

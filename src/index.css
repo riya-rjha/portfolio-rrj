@@ -49,6 +49,12 @@ textarea {
   }
 }
 
+
+h1.all-headings, h2 {
+  @apply mb-6;
+}
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

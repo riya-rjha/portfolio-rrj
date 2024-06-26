@@ -1,7 +1,7 @@
 import React from "react";
 
 const Experience = () => (
-  <section className="p-4 md:p-8 text-black bg-white">
+  <section id="experience" className="p-4 md:p-8 text-black bg-white">
     <h2 className="text-2xl md:text-3xl font-bold mb-8  text-center all-headings">
       My Work Experiences
     </h2>
