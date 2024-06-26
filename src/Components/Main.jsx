@@ -12,7 +12,10 @@ const Main = () => (
         <h1 className="text-4xl head-ing">"</h1>
         <div className="bg-gray-200 text-black p-4 rounded-md text-center lg:text-left">
           Explore my{" "}
-          <a href="">
+          <a
+            href="https://www.linkedin.com/in/riya-ranjan-jha-751688249/"
+            target="_blank"
+          >
             <span className="font-black text-blue-800">LinkedIn</span>
           </a>{" "}
           profile for a comprehensive Portfolio featuring my projects in various
@@ -32,8 +35,10 @@ const Main = () => (
           Hey there! This is your proof reading wizard, an extensive coder with
           development maestros & a figmatic touch of UI & UX in every field & a
           lot of codes . Let's connect on{" "}
-          <span className="font-black text-blue-800">Twitter</span> for more
-          opportunities!
+          <a href="https://x.com/RiyaJha25892" target="_blank">
+            <span className="font-black text-blue-800">Twitter</span>
+          </a>{" "}
+          for more opportunities!
         </div>
         <h1 className="text-4xl head-ing-2 mt-3">"</h1>
       </div>
