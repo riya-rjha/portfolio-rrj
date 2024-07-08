@@ -23,7 +23,7 @@ const Skills = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
           <div className="bg-orange-500 text-white p-3 rounded-lg shadow-xl transition transform hover:scale-105 hover:bg-orange-600 text-xl font-semibold">React.js</div>
           <div className="bg-orange-500 text-white p-3 rounded-lg shadow-xl transition transform hover:scale-105 hover:bg-orange-600 text-xl font-semibold">Express.js</div>
-          <div className="bg-orange-500 text-white p-3 rounded-lg shadow-xl transition transform hover:scale-105 hover:bg-orange-600 text-xl font-semibold">React.js</div>
+          <div className="bg-orange-500 text-white p-3 rounded-lg shadow-xl transition transform hover:scale-105 hover:bg-orange-600 text-xl font-semibold">Typescript</div>
           <div className="bg-orange-500 text-white p-3 rounded-lg shadow-xl transition transform hover:scale-105 hover:bg-orange-600 text-xl font-semibold">Node.js</div>
           <div className="bg-orange-500 text-white p-3 rounded-lg shadow-xl transition transform hover:scale-105 hover:bg-orange-600 text-xl font-semibold">TailwindCSS</div>
           <div className="bg-orange-500 text-white p-3 rounded-lg shadow-xl transition transform hover:scale-105 hover:bg-orange-600 text-xl font-semibold">Git</div>
