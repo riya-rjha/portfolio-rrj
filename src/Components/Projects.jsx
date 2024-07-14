@@ -8,10 +8,20 @@ import EmailValid from "../Images/EmailValid.png";
 import Skills from "./Skills";
 import PasswordGen from '../Images/PasswordGen.png';
 import QRCode from '../Images/QRCode.png';
-import Calculator from '../Images/Calculator.png'
+import Calculator from '../Images/Calculator.png';
+import BlogApp from '../Images/BlogApp.png'
 
 const Projects = () => {
   const projects = [
+    {
+      name: "Blog Application ",
+      url: "https://github.com/riya-rjha/Full-Stack-Blog-App/tree/main",
+      site: "https://client-blog-app-self.vercel.app/",
+      img: BlogApp,
+      description:
+        "A full stack blog application built using React.js & it's libraries. Features include user authentication, write, edit, delete, update a blog post.",
+      tech: "MERN + Redux + Multer ",
+    },
     {
       name: "Amazon Clone",
       url: "https://github.com/riya-rjha/Amazon-Clone",
@@ -37,7 +47,7 @@ const Projects = () => {
       img: BookStoreWebsite,
       description:
         "An online bookstore website featuring a catalog of books, search functionality, and a cart for purchasing books.",
-        tech: "MERN"
+      tech: "MERN",
     },
   ];
 
@@ -89,40 +99,38 @@ const Projects = () => {
   return (
     <section id="project" className="p-4 md:p-8">
       <h2 className="text-2xl md:text-3xl mb-4  all-headings">My Projects</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="space-y-8">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-white shadow-md p-4 rounded hover:transform hover:scale-105 delay-100 transition-transform"
+            className="bg-white shadow-md p-4 rounded flex flex-col md:flex-row items-center"
           >
-            <h2 className="text-2xl mb-2 uppercase all-headings text-gray-800">{project.name}</h2>
-            <img
-              src={project.img}
-              alt={project.name}
-              className="w-full h-32 object-cover mb-2 rounded"
-            />
-            <div className="my-4">
+            <div className="md:w-1/2 md:pr-4">
+              <h2 className="text-2xl mb-2 uppercase all-headings text-gray-800">{project.name}</h2>
               <p className="mb-2 text-[20px]">
                 <span className="font-black text-[20px]">Tech Stack: </span>
                 {project.tech}
               </p>
-              <p>{project.description}</p>
+              <p className="mb-4">{project.description}</p>
+              <div className="flex flex-col">
+                <button className="bg-[#1f2937f0] transition delay-75 text-white py-2 px-4 rounded mt-2 hover:bg-slate-950">
+                  <a href={project.url} target="_blank" rel="noopener noreferrer">
+                    View on GitHub
+                  </a>
+                </button>
+                <button className="bg-[#1f2937f0] transition delay-75 text-white py-2 px-4 rounded mt-2 hover:bg-slate-950">
+                  <a href={project.site} target="_blank" rel="noopener noreferrer">
+                    Explore Website Now
+                  </a>
+                </button>
+              </div>
             </div>
-            <div className="flex flex-col">
-              <button className="bg-gray-800 transition delay-75 text-white py-2 px-4 rounded mt-2 hover:bg-slate-950">
-                <a href={project.url} target="_blank" rel="noopener noreferrer">
-                  View on GitHub
-                </a>
-              </button>
-              <button className="bg-gray-800 transition delay-75 text-white py-2 px-4 rounded mt-2 hover:bg-slate-950">
-                <a
-                  href={project.site}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Explore Website Now
-                </a>
-              </button>
+            <div className="md:w-1/2">
+              <img
+                src={project.img}
+                alt={project.name}
+                className="w-full h-[18rem] object-cover mb-2 rounded"
+              />
             </div>
           </div>
         ))}

@@ -61,7 +61,7 @@ const Header = () => {
           <li>
             <a
               target="_blank"
-              href="https://drive.google.com/file/d/1ZQmQpFa8dzoM6tVPccr0tD_0GrYTg4gT/view"
+              href="https://drive.google.com/file/d/1Xw2xbtsP8I8_NiQ1GbhDdyoymxeTSw13/view?usp=sharing"
               className="hover:underline p-2 hover:bg-[#F97316] hover:rounded-[50px]"
             >
               Resume

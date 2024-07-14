@@ -16,7 +16,7 @@ const Main = () => (
             href="https://www.linkedin.com/in/riya-ranjan-jha-751688249/"
             target="_blank"
           >
-            <span className="font-black text-blue-800">LinkedIn</span>
+            <span className="font-black text-blue-800 hover:underline">LinkedIn</span>
           </a>{" "}
           profile for a comprehensive Portfolio featuring my projects in various
           domains & achievements. Let's connect on LinkedIn for collaborations!
@@ -36,7 +36,7 @@ const Main = () => (
           development maestros & a figmatic touch of UI & UX in every field & a
           lot of codes . Let's connect on{" "}
           <a href="https://x.com/RiyaJha25892" target="_blank">
-            <span className="font-black text-blue-800">Twitter</span>
+            <span className="font-black text-blue-800 hover:underline">Twitter</span>
           </a>{" "}
           for more opportunities!
         </div>
@@ -45,14 +45,14 @@ const Main = () => (
     </div>
     <div className="flex flex-col md:flex-row items-center justify-between mt-4 space-y-2 md:space-y-0 md:space-x-4">
       <a
-        href="https://www.linkedin.com/in/riya-ranjan-jha-751688249/"
+        href="https://drive.google.com/file/d/1Xw2xbtsP8I8_NiQ1GbhDdyoymxeTSw13/view?usp=sharing"
         target="_blank"
       >
         <button className="bg-orange-500 text-white py-3 px-8 text-xl rounded hover:bg-orange-700 transition delay-75">
           Portfolio
         </button>
       </a>
-      <a href="https://x.com/RiyaJha25892" target="_blank">
+      <a href="https://www.linkedin.com/in/riya-ranjan-jha-751688249/" target="_blank">
         <button className="bg-gray-900 text-white py-3 px-8 text-xl rounded hover:bg-gray-600  transition delay-75">
           Hire me
         </button>
