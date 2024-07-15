@@ -12,11 +12,10 @@ const Header = () => {
     setIsOpen(false);
   };
 
-
   return (
-    <header className="sticky top-0 flex justify-between items-center p-4 bg-black text-white z-50">
+    <header className="sticky top-0 flex justify-between items-center p-6 bg-[#9b9b9b9e] bg-opacity-5 backdrop-filter backdrop-blur-lg text-white shadow-lg z-50">
       <a href="">
-        <div className="text-lg font-bold logo-name">RRJ</div>
+        <div className="text-2xl text-black font-extrabold tracking-wide logo-name">RRJ</div>
       </a>
       <div className="md:hidden">
         <button onClick={toggleMenu} className="text-white focus:outline-none">
@@ -24,12 +23,12 @@ const Header = () => {
             <p></p>
           ) : (
             <svg
-              xmlns="http://www.w3.org/2000/svg" // HamBurger Icon
+              xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              strokeWidth={1.5}
+              strokeWidth={2}
               stroke="currentColor"
-              className="h-6 w-6"
+              className="h-8 w-8"
             >
               <path
                 strokeLinecap="round"
@@ -41,11 +40,11 @@ const Header = () => {
         </button>
       </div>
       <nav className="hidden md:flex">
-        <ul className="flex space-x-4 text-sm md:text-base">
+        <ul className="flex space-x-6 text-base">
           <li>
             <a
               href="/"
-              className="bg-[#F97316] p-2 rounded-[50px] hover:underline"
+              className="px-4 py-2 bg-white text-purple-600 rounded-full hover:bg-purple-600 hover:text-white transition duration-300 ease-in-out"
             >
               Home
             </a>
@@ -53,7 +52,7 @@ const Header = () => {
           <li>
             <a
               href="#about"
-              className="hover:underline p-2 hover:bg-[#F97316] hover:rounded-[50px]"
+              className="px-4 py-2 text-black font-semibold rounded-full hover:bg-white hover:text-purple-600 transition duration-300 ease-in-out"
             >
               About
             </a>
@@ -62,7 +61,7 @@ const Header = () => {
             <a
               target="_blank"
               href="https://drive.google.com/file/d/1Xw2xbtsP8I8_NiQ1GbhDdyoymxeTSw13/view?usp=sharing"
-              className="hover:underline p-2 hover:bg-[#F97316] hover:rounded-[50px]"
+              className="px-4 py-2 text-black font-semibold rounded-full hover:bg-white hover:text-purple-600 transition duration-300 ease-in-out"
             >
               Resume
             </a>
@@ -70,7 +69,7 @@ const Header = () => {
           <li>
             <a
               href="#project"
-              className="hover:underline p-2 hover:bg-[#F97316] hover:rounded-[50px]"
+              className="px-4 py-2 text-black font-semibold rounded-full hover:bg-white hover:text-purple-600 transition duration-300 ease-in-out"
             >
               Projects
             </a>
@@ -78,7 +77,7 @@ const Header = () => {
           <li>
             <a
               href="#articles"
-              className="hover:underline p-2 hover:bg-[#F97316] hover:rounded-[50px]"
+              className="px-4 py-2 text-black font-semibold rounded-full hover:bg-white hover:text-purple-600 transition duration-300 ease-in-out"
             >
               Articles
             </a>
@@ -86,7 +85,7 @@ const Header = () => {
           <li>
             <a
               href="#experience"
-              className="hover:underline p-2 hover:bg-[#F97316] hover:rounded-[50px]"
+              className="px-4 py-2 text-black font-semibold rounded-full hover:bg-white hover:text-purple-600 transition duration-300 ease-in-out"
             >
               Experiences
             </a>
@@ -94,13 +93,11 @@ const Header = () => {
           <li>
             <a
               href="#socials"
-              className="hover:underline p-2 hover:bg-[#F97316] hover:rounded-[50px]"
+              className="px-4 py-2 text-black font-semibold rounded-full hover:bg-white hover:text-purple-600 transition duration-300 ease-in-out"
             >
               Socials
             </a>
           </li>
-
-
         </ul>
       </nav>
       <Transition
@@ -111,35 +108,38 @@ const Header = () => {
         leave="transition ease-in duration-200"
         leaveFrom="transform translate-x-0 opacity-100"
         leaveTo="transform -translate-x-full opacity-0"
-        className="fixed inset-0 flex md:hidden bg-gray-900 bg-opacity-95"
+        className="fixed inset-0 flex md:hidden bg-gray-900 bg-opacity-90"
       >
-        <div className="flex flex-col items-start p-4 w-64 space-y-4">
+        <div className="flex flex-col items-start p-6 w-64 space-y-4">
           <div className="flex justify-end w-full">
             <button
               onClick={closeMenu}
               className="text-white focus:outline-none"
             >
-              <p className="text-xl">❌</p>
+              <p className="text-2xl">❌</p>
             </button>
           </div>
-          <ul className="flex flex-col space-y-2 text-sm md:text-base">
+          <ul className="flex flex-col space-y-4 text-base text-white">
             <li className="hover:underline">
-              <a href="#home">Home</a>
+              <a href="#home" className="px-4 py-2">Home</a>
             </li>
             <li className="hover:underline">
-              <a href="#about">About</a>
+              <a href="#about" className="px-4 py-2">About</a>
             </li>
             <li className="hover:underline">
-              <a href="https://drive.google.com/file/d/1ZQmQpFa8dzoM6tVPccr0tD_0GrYTg4gT/view">Resume</a>
+              <a href="https://drive.google.com/file/d/1ZQmQpFa8dzoM6tVPccr0tD_0GrYTg4gT/view" className="px-4 py-2">Resume</a>
             </li>
             <li className="hover:underline">
-              <a href="#project">Projects</a>
+              <a href="#project" className="px-4 py-2">Projects</a>
             </li>
             <li className="hover:underline">
-              <a href="#articles">Articles</a>
+              <a href="#articles" className="px-4 py-2">Articles</a>
             </li>
             <li className="hover:underline">
-              <a href="#experience">Experience</a>
+              <a href="#experience" className="px-4 py-2">Experience</a>
+            </li>
+            <li className="hover:underline">
+              <a href="#socials" className="px-4 py-2">Socials</a>
             </li>
           </ul>
         </div>
