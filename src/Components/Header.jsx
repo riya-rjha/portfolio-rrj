@@ -13,9 +13,11 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 flex justify-between items-center p-6 bg-[#9b9b9b9e] bg-opacity-5 backdrop-filter backdrop-blur-lg text-white shadow-lg z-50">
+    <header className="sticky top-0 flex justify-between items-center p-6 bg-black bg-opacity-70 backdrop-blur-md text-white shadow-lg z-50">
       <a href="">
-        <div className="text-2xl text-black font-extrabold tracking-wide logo-name">RRJ</div>
+        <div className="text-2xl text-black font-extrabold tracking-wide logo-name">
+          RRJ
+        </div>
       </a>
       <div className="md:hidden">
         <button onClick={toggleMenu} className="text-white focus:outline-none">
@@ -52,7 +54,7 @@ const Header = () => {
           <li>
             <a
               href="#about"
-              className="px-4 py-2 text-black font-semibold rounded-full hover:bg-white hover:text-purple-600 transition duration-300 ease-in-out"
+              className="px-4 py-2 rounded-full hover:bg-white hover:text-purple-600 transition text-white duration-300 ease-in-out"
             >
               About
             </a>
@@ -61,7 +63,7 @@ const Header = () => {
             <a
               target="_blank"
               href="https://drive.google.com/file/d/1Xw2xbtsP8I8_NiQ1GbhDdyoymxeTSw13/view?usp=sharing"
-              className="px-4 py-2 text-black font-semibold rounded-full hover:bg-white hover:text-purple-600 transition duration-300 ease-in-out"
+              className="px-4 py-2  text-white rounded-full hover:bg-white hover:text-purple-600 transition duration-300 ease-in-out"
             >
               Resume
             </a>
@@ -69,7 +71,7 @@ const Header = () => {
           <li>
             <a
               href="#project"
-              className="px-4 py-2 text-black font-semibold rounded-full hover:bg-white hover:text-purple-600 transition duration-300 ease-in-out"
+              className="px-4 py-2  text-white rounded-full hover:bg-white hover:text-purple-600 transition duration-300 ease-in-out"
             >
               Projects
             </a>
@@ -77,7 +79,7 @@ const Header = () => {
           <li>
             <a
               href="#articles"
-              className="px-4 py-2 text-black font-semibold rounded-full hover:bg-white hover:text-purple-600 transition duration-300 ease-in-out"
+              className="px-4 py-2 rounded-full hover:bg-white hover:text-purple-600 transition text-white duration-300 ease-in-out"
             >
               Articles
             </a>
@@ -85,7 +87,7 @@ const Header = () => {
           <li>
             <a
               href="#experience"
-              className="px-4 py-2 text-black font-semibold rounded-full hover:bg-white hover:text-purple-600 transition duration-300 ease-in-out"
+              className="px-4 py-2 rounded-full hover:bg-white hover:text-purple-600 transition text-white duration-300 ease-in-out"
             >
               Experiences
             </a>
@@ -93,7 +95,7 @@ const Header = () => {
           <li>
             <a
               href="#socials"
-              className="px-4 py-2 text-black font-semibold rounded-full hover:bg-white hover:text-purple-600 transition duration-300 ease-in-out"
+              className="px-4 py-2 rounded-full hover:bg-white hover:text-purple-600 transition text-white duration-300 ease-in-out"
             >
               Socials
             </a>
@@ -108,38 +110,52 @@ const Header = () => {
         leave="transition ease-in duration-200"
         leaveFrom="transform translate-x-0 opacity-100"
         leaveTo="transform -translate-x-full opacity-0"
-        className="fixed inset-0 flex md:hidden bg-gray-900 bg-opacity-90"
+        className="fixed w-full inset-0 z-50 flex md:hidden"
       >
-        <div className="flex flex-col items-start p-6 w-64 space-y-4">
-          <div className="flex justify-end w-full">
-            <button
-              onClick={closeMenu}
-              className="text-white focus:outline-none"
-            >
+        <div className="flex flex-col items-start p-6 w-64 h-fit bg-black bg-opacity-70 backdrop-blur-md text-white space-y-4">
+          <div className="flex items-start justify-end w-full">
+            <button onClick={closeMenu} className="focus:outline-none">
               <p className="text-2xl">❌</p>
             </button>
           </div>
-          <ul className="flex flex-col space-y-4 text-base text-white">
-            <li className="hover:underline">
-              <a href="#home" className="px-4 py-2">Home</a>
+          <ul className="flex flex-col space-y-4 text-base">
+            <li className="hover:underline transition ease-in-out duration-200">
+              <a href="#home" className="px-4 py-2 text-2xl">
+                Home
+              </a>
             </li>
-            <li className="hover:underline">
-              <a href="#about" className="px-4 py-2">About</a>
+            <li className="hover:underline transition ease-in-out duration-200">
+              <a href="#about" className="px-4 py-2 text-2xl">
+                About
+              </a>
             </li>
-            <li className="hover:underline">
-              <a href="https://drive.google.com/file/d/1ZQmQpFa8dzoM6tVPccr0tD_0GrYTg4gT/view" className="px-4 py-2">Resume</a>
+            <li className="hover:underline transition ease-in-out duration-200">
+              <a
+                href="https://drive.google.com/file/d/1ZQmQpFa8dzoM6tVPccr0tD_0GrYTg4gT/view"
+                className="px-4 py-2 text-2xl"
+              >
+                Resume
+              </a>
             </li>
-            <li className="hover:underline">
-              <a href="#project" className="px-4 py-2">Projects</a>
+            <li className="hover:underline transition ease-in-out duration-200">
+              <a href="#project" className="px-4 py-2 text-2xl">
+                Projects
+              </a>
             </li>
-            <li className="hover:underline">
-              <a href="#articles" className="px-4 py-2">Articles</a>
+            <li className="hover:underline transition ease-in-out duration-200">
+              <a href="#articles" className="px-4 py-2 text-2xl">
+                Articles
+              </a>
             </li>
-            <li className="hover:underline">
-              <a href="#experience" className="px-4 py-2">Experience</a>
+            <li className="hover:underline transition ease-in-out duration-200">
+              <a href="#experience" className="px-4 py-2 text-2xl">
+                Experience
+              </a>
             </li>
-            <li className="hover:underline">
-              <a href="#socials" className="px-4 py-2">Socials</a>
+            <li className="hover:underline transition ease-in-out duration-200">
+              <a href="#socials" className="px-4 py-2 text-2xl">
+                Socials
+              </a>
             </li>
           </ul>
         </div>

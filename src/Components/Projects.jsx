@@ -19,8 +19,8 @@ const Projects = () => {
       site: "https://client-blog-app-self.vercel.app/",
       img: BlogApp,
       description:
-        "A full stack blog application built using React.js & it's libraries. Features include user authentication, write, edit, delete, update a blog post.",
-      tech: "MERN + Redux + Multer ",
+        "A full stack blog application built using React.js & its libraries. Features include user authentication, write, edit, delete, update a blog post.",
+      tech: "MERN + Redux + Multer",
     },
     {
       name: "Amazon Clone",
@@ -64,7 +64,7 @@ const Projects = () => {
       url: "https://github.com/riya-rjha/JS-Projects/tree/main/Quiz%20App",
       img: QuizApp,
       description:
-        "A quiz app built with JavaScript. Users can take quizzes on various topics, see their scores, and share results.",
+        "A quiz app built with JavaScript. Users can take quizzes on various topics, see their scores, and check their answers right after each submission.",
     },
     {
       name: "Form Validation Application",
@@ -97,74 +97,72 @@ const Projects = () => {
   ];
 
   return (
-    <section id="project" className="p-4 md:p-8">
-      <h2 className="text-2xl md:text-3xl mb-4  all-headings">My Projects</h2>
-      <div className="space-y-8">
+    <section id="project" className="p-6 md:p-12">
+      <h2 className="text-3xl md:text-4xl mb-8 font-bold all-headings tracking-wide text-center">My Projects</h2>
+      <div className="space-y-12">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-white shadow-md p-4 rounded flex flex-col md:flex-row items-center"
+            className="bg-white text-gray-800 shadow-lg p-6 rounded-lg flex flex-col md:flex-row items-center transform transition duration-500 hover:scale-105"
           >
-            <div className="md:w-1/2 md:pr-4">
-              <h2 className="text-2xl mb-2 uppercase all-headings text-gray-800">{project.name}</h2>
-              <p className="mb-2 text-[20px]">
-                <span className="font-black text-[20px]">Tech Stack: </span>
-                {project.tech}
+            <div className="md:w-1/2 md:pr-6">
+              <h3 className="text-2xl font-bold mb-4 uppercase">{project.name}</h3>
+              <p className="mb-4 text-lg">
+                <span className="font-bold">Tech Stack: </span>{project.tech}
               </p>
               <p className="mb-4">{project.description}</p>
-              <div className="flex flex-col">
-                <button className="bg-[#1f2937f0] transition delay-75 text-white py-2 px-4 rounded mt-2 hover:bg-slate-950">
-                  <a href={project.url} target="_blank" rel="noopener noreferrer">
-                    View on GitHub
-                  </a>
-                </button>
-                <button className="bg-[#1f2937f0] transition delay-75 text-white py-2 px-4 rounded mt-2 hover:bg-slate-950">
-                  <a href={project.site} target="_blank" rel="noopener noreferrer">
-                    Explore Website Now
-                  </a>
-                </button>
+              <div className="flex flex-col space-y-2">
+                <a 
+                  href={project.url} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-orange-400 text-white py-2 px-4 rounded-lg text-center transition duration-300 hover:bg-orange-600"
+                >
+                  View on GitHub
+                </a>
+                <a 
+                  href={project.site} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-orange-400 text-white py-2 px-4 rounded-lg text-center transition duration-300 hover:bg-orange-600"
+                >
+                  Explore Website Now
+                </a>
               </div>
             </div>
-            <div className="md:w-1/2">
+            <div className="md:w-1/2 mt-6 md:mt-0">
               <img
                 src={project.img}
                 alt={project.name}
-                className="w-full h-[18rem] object-cover mb-2 rounded"
+                className="w-full h-64 object-cover rounded-lg shadow-md"
               />
             </div>
           </div>
         ))}
       </div>
       <Skills />
-      <h2 className="text-3xl md:text-3xl  mb-4 all-headings mt-10">
-        Mini Projects
-      </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 ">
+      <h2 className="text-3xl md:text-4xl mb-8 mt-16 font-bold tracking-wide text-center">Mini Projects</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {miniProjects.map((miniProject, index) => (
           <div
             key={index}
-            className="bg-white shadow-md p-4 rounded hover:transform hover:scale-105 delay-100 transition-transform"
+            className="bg-white text-gray-800 shadow-lg p-6 rounded-lg transform transition duration-500 hover:scale-105"
           >
-            <h3 className="text-xl font-bold mb-2">{miniProject.name}</h3>
+            <h3 className="text-xl font-bold mb-4">{miniProject.name}</h3>
             <img
               src={miniProject.img}
               alt={miniProject.name}
-              className="w-full h-32 object-cover mb-2 rounded "
+              className="w-full h-32 object-cover rounded-lg shadow-md mb-4"
             />
-            <div className="my-4">
-              <p className="break-all ">{miniProject.description}</p>
-            </div>
-            <div className="flex flex-col">
-              <button className="bg-gray-800 transition delay-75 text-white py-2 px-4 rounded mt-2 hover:bg-slate-950">
-                <a
-                  href={miniProject.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View on GitHub
-                </a>
-              </button>
-            </div>
+            <p className="mb-4">{miniProject.description}</p>
+            <a 
+              href={miniProject.url} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-orange-400 text-white py-2 px-4 rounded-lg text-center transition duration-300 hover:bg-orange-600 block"
+            >
+              View on GitHub
+            </a>
           </div>
         ))}
       </div>
