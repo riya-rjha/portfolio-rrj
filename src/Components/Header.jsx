@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
+import ThemeToggle from './ThemeToggleHead';
+import ThemeToggleHamBurger from './ThemeToggleHamBurger';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,9 +15,9 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 flex justify-between items-center p-6 bg-black bg-opacity-70 backdrop-blur-md text-white shadow-lg z-50">
+    <header className="sticky top-0 flex justify-between items-center p-6 bg-black bg-opacity-70 backdrop-blur-md dark:backdrop-blur-md text-white shadow-lg z-50 dark:bg-white dark:bg-opacity-80 ">
       <a href="">
-        <div className="text-2xl text-black font-extrabold tracking-wide logo-name">
+        <div className="text-2xl text-black font-extrabold tracking-wide logo-name dark:text-black">
           RRJ
         </div>
       </a>
@@ -46,7 +48,7 @@ const Header = () => {
           <li>
             <a
               href="/"
-              className="px-4 py-2 bg-white text-purple-600 rounded-full hover:bg-purple-600 hover:text-white transition duration-300 ease-in-out"
+              className="px-4 py-2 dark:text-white dark:bg-purple-600 bg-white text-purple-600 rounded-full hover:bg-purple-600 hover:text-white dark:hover:text-white dark:hover:bg-black transition duration-300 ease-in-out"
             >
               Home
             </a>
@@ -54,7 +56,7 @@ const Header = () => {
           <li>
             <a
               href="#about"
-              className="px-4 py-2 rounded-full hover:bg-white hover:text-purple-600 transition text-white duration-300 ease-in-out"
+              className="px-4 py-2 rounded-full hover:bg-white hover:text-purple-600 transition text-white duration-300 ease-in-out  dark:hover:bg-purple-600 dark:hover:text-white dark:text-black"
             >
               About
             </a>
@@ -63,7 +65,7 @@ const Header = () => {
             <a
               target="_blank"
               href="https://drive.google.com/file/d/1Xw2xbtsP8I8_NiQ1GbhDdyoymxeTSw13/view?usp=sharing"
-              className="px-4 py-2  text-white rounded-full hover:bg-white hover:text-purple-600 transition duration-300 ease-in-out"
+              className="px-4 py-2  text-white rounded-full hover:bg-white hover:text-purple-600 transition duration-300 ease-in-out dark:hover:bg-purple-600 dark:hover:text-white dark:text-black"
             >
               Resume
             </a>
@@ -71,7 +73,7 @@ const Header = () => {
           <li>
             <a
               href="#project"
-              className="px-4 py-2  text-white rounded-full hover:bg-white hover:text-purple-600 transition duration-300 ease-in-out"
+              className="px-4 py-2  text-white rounded-full hover:bg-white hover:text-purple-600 transition duration-300 ease-in-out dark:hover:bg-purple-600 dark:hover:text-white dark:text-black"
             >
               Projects
             </a>
@@ -79,7 +81,7 @@ const Header = () => {
           <li>
             <a
               href="#articles"
-              className="px-4 py-2 rounded-full hover:bg-white hover:text-purple-600 transition text-white duration-300 ease-in-out"
+              className="px-4 py-2 rounded-full hover:bg-white hover:text-purple-600 transition text-white duration-300 ease-in-out dark:hover:bg-purple-600 dark:hover:text-white dark:text-black"
             >
               Articles
             </a>
@@ -87,7 +89,7 @@ const Header = () => {
           <li>
             <a
               href="#experience"
-              className="px-4 py-2 rounded-full hover:bg-white hover:text-purple-600 transition text-white duration-300 ease-in-out"
+              className="px-4 py-2 rounded-full hover:bg-white hover:text-purple-600 transition text-white duration-300 ease-in-out dark:hover:bg-purple-600 dark:hover:text-white dark:text-black"
             >
               Experiences
             </a>
@@ -95,11 +97,12 @@ const Header = () => {
           <li>
             <a
               href="#socials"
-              className="px-4 py-2 rounded-full hover:bg-white hover:text-purple-600 transition text-white duration-300 ease-in-out"
+              className="px-4 py-2 rounded-full hover:bg-white hover:text-purple-600 transition text-white duration-300 ease-in-out dark:hover:bg-purple-600 dark:hover:text-white dark:text-black"
             >
               Socials
             </a>
           </li>
+        <ThemeToggle />
         </ul>
       </nav>
       <Transition
@@ -157,6 +160,7 @@ const Header = () => {
                 Socials
               </a>
             </li>
+            <ThemeToggleHamBurger />
           </ul>
         </div>
       </Transition>

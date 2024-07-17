@@ -5,7 +5,7 @@ const Main = () => (
   <main className="text-center p-4 md:p-8 ">
     <h1 className="text-3xl sm:text-3xl md:text-5xl font-bold my-2 md:my-4 text-orange-500 flex items-center justify-center flex-col">
       <span className="mt-2">I'm Riya Ranjan Jha,</span>
-      <br /> <span className="text-black -mt-8 mb-6 ">Front End Developer</span>
+      <br /> <span className="text-black -mt-8 mb-6 dark:text-white">Front End Developer</span>
     </h1>
     <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-20">
       <div className="flex flex-col items-center lg:items-start">
@@ -48,12 +48,12 @@ const Main = () => (
         href="https://drive.google.com/file/d/1Xw2xbtsP8I8_NiQ1GbhDdyoymxeTSw13/view?usp=sharing"
         target="_blank"
       >
-        <button className="bg-orange-500 text-white py-3 px-8 text-xl rounded hover:bg-orange-700 transition delay-75">
+        <button className="bg-orange-500 text-white py-3 px-8 text-xl rounded hover:bg-orange-700 transition delay-75 dark:hover:bg-orange-600">
           Portfolio
         </button>
       </a>
       <a href="https://www.linkedin.com/in/riya-ranjan-jha-751688249/" target="_blank">
-        <button className="bg-gray-900 text-white py-3 px-8 text-xl rounded hover:bg-gray-600  transition delay-75">
+        <button className="bg-gray-900 text-white py-3 px-8 text-xl rounded hover:bg-gray-600  transition delay-75 dark:bg-gray-700 dark:hover:bg-gray-600">
           Hire me
         </button>
       </a>

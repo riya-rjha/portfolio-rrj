@@ -2,8 +2,8 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <div>
-      <h1 className="text-4xl font-bold mt-8 uppercase all-headings">SKILLS</h1>
+    <div className="dark:bg-white p-4 rounded-md mt-16">
+      <h1 className="text-4xl font-bold light:mt-8 dark:mt-3 dark:mb-5 uppercase all-headings dark:text-black ">SKILLS</h1>
       
       <div className="mb-8">
         <h2 className="text-2xl font-bold text-orange-600 mb-4">Programming Languages</h2>
@@ -43,11 +43,11 @@ const Skills = () => {
       <div className="mb-8">
         <h2 className="text-2xl font-bold text-orange-600 mb-4">Extras</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
-          <div className="bg-orange-500 text-white p-[10px] rounded-lg shadow-xl transition transform hover:scale-105 hover:bg-orange-600 text-xl font-semibold">Anchoring</div>
-          <div className="bg-orange-500 text-white p-[10px] rounded-lg shadow-xl transition transform hover:scale-105 hover:bg-orange-600 text-xl font-semibold">Content Writing</div>
-          <div className="bg-orange-500 text-white p-[10px] rounded-lg shadow-xl transition transform hover:scale-105 hover:bg-orange-600 text-xl font-semibold">Singing</div>
-          <div className="bg-orange-500 text-white p-[10px] rounded-lg shadow-xl transition transform hover:scale-105 hover:bg-orange-600 text-xl font-semibold">Debates</div>
-          <div className="bg-orange-500 text-white p-[10px] rounded-lg shadow-xl transition transform hover:scale-105 hover:bg-orange-600 text-xl font-semibold">Extempore</div>
+          <div className="bg-orange-500 text-white p-[10px]  rounded-lg shadow-xl transition transform hover:scale-105 hover:bg-orange-600 text-xl font-semibold">Anchoring</div>
+          <div className="bg-orange-500 text-white p-[10px] dark:p-2 rounded-lg shadow-xl transition transform hover:scale-105 hover:bg-orange-600 text-xl font-semibold">Content Writing</div>
+          <div className="bg-orange-500 text-white p-[10px]  rounded-lg shadow-xl transition transform hover:scale-105 hover:bg-orange-600 text-xl font-semibold">Singing</div>
+          <div className="bg-orange-500 text-white p-[10px]  rounded-lg shadow-xl transition transform hover:scale-105 hover:bg-orange-600 text-xl font-semibold">Debates</div>
+          <div className="bg-orange-500 text-white p-[10px]  rounded-lg shadow-xl transition transform hover:scale-105 hover:bg-orange-600 text-xl font-semibold">Extempore</div>
         </div>
       </div>
     </div>

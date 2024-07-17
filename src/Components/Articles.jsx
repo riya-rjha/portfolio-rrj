@@ -68,7 +68,7 @@ const Articles = () => (
             alt={article.title}
             className="w-full h-[55%] mb-4 rounded"
           />
-          <h3 className="text-xl font-bold mb-2">{article.title}</h3>
+          <h3 className="text-xl font-bold mb-2 dark:text-black">{article.title}</h3>
           <p className="text-gray-700 text-sm md:text-base">
             {article.description}
           </p>
