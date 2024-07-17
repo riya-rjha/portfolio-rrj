@@ -64,12 +64,9 @@ textarea {
   }
 }
 
-
-h1.all-headings, h2 {
-  @apply mb-6;
+.h1.all-headings, .h2 {
+  margin-bottom: 1.5rem;
 }
-
-
 
 @tailwind base;
 @tailwind components;
