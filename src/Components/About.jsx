@@ -5,7 +5,7 @@ const AboutUs = () => {
   return (
     <section
       id="about"
-      className=" text-black shadow-lg dark:shadow-white ho py-10 m-8 rounded-lg bg-white"
+      className=" text-black border-2 shadow-xl dark:shadow-white ho py-10 m-8 rounded-lg bg-white"
     >
       <div className="container mx-auto px-4">
         <h2 className="text-4xl all-headings text-center mb-8">About Me</h2>
