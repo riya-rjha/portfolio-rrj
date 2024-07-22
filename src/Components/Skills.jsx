@@ -6,7 +6,7 @@ const Skills = () => {
       <h1 className="text-4xl font-bold light:mt-8 dark:mt-3 dark:mb-5 uppercase all-headings dark:text-black ">SKILLS</h1>
       
       <div className="mb-8">
-        <h2 className="text-2xl font-bold text-orange-600 mb-4">Programming Languages</h2>
+        <h2 className="text-2xl font-bold text-orange-600 mb-4">Languages</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
           <div className="bg-orange-500 text-white p-[10px] rounded-lg shadow-xl transition transform hover:scale-105 hover:bg-orange-600 text-xl font-semibold">Javascript</div>
           <div className="bg-orange-500 text-white p-[10px] rounded-lg shadow-xl transition transform hover:scale-105 hover:bg-orange-600 text-xl font-semibold">Typescript</div>
@@ -25,7 +25,7 @@ const Skills = () => {
           <div className="bg-orange-500 text-white p-[10px] rounded-lg shadow-xl transition transform hover:scale-105 hover:bg-orange-600 text-xl font-semibold">Express.js</div>
           <div className="bg-orange-500 text-white p-[10px] rounded-lg shadow-xl transition transform hover:scale-105 hover:bg-orange-600 text-xl font-semibold">Typescript</div>
           <div className="bg-orange-500 text-white p-[10px] rounded-lg shadow-xl transition transform hover:scale-105 hover:bg-orange-600 text-xl font-semibold">Node.js</div>
-          <div className="bg-orange-500 text-white p-[10px] rounded-lg shadow-xl transition transform hover:scale-105 hover:bg-orange-600 text-xl font-semibold">TailwindCSS</div>
+          <div className="bg-orange-500 text-white p-[10px] rounded-lg shadow-xl transition transform hover:scale-105 hover:bg-orange-600 text-xl font-semibold">Tailwind CSS</div>
           <div className="bg-orange-500 text-white p-[10px] rounded-lg shadow-xl transition transform hover:scale-105 hover:bg-orange-600 text-xl font-semibold">Git</div>
           <div className="bg-orange-500 text-white p-[10px] rounded-lg shadow-xl transition transform hover:scale-105 hover:bg-orange-600 text-xl font-semibold">GitHub</div>
           <div className="bg-orange-500 text-white p-[10px] rounded-lg shadow-xl transition transform hover:scale-105 hover:bg-orange-600 text-xl font-semibold">Firebase</div>
@@ -36,7 +36,6 @@ const Skills = () => {
         <h2 className="text-2xl font-bold text-orange-600 mb-4">Databases</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
           <div className="bg-orange-500 text-white p-[10px] rounded-lg shadow-xl transition transform hover:scale-105 hover:bg-orange-600 text-xl font-semibold">MongoDB</div>
-          <div className="bg-orange-500 text-white p-[10px] rounded-lg shadow-xl transition transform hover:scale-105 hover:bg-orange-600 text-xl font-semibold">Basics of SQL</div>
         </div>
       </div>
 

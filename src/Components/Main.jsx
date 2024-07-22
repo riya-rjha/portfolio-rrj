@@ -49,12 +49,12 @@ const Main = () => (
         target="_blank"
       >
         <button className="bg-orange-500 text-white py-3 px-8 text-xl rounded hover:bg-orange-700 transition delay-75 dark:hover:bg-orange-600">
-          Portfolio
+          Resume
         </button>
       </a>
       <a href="https://www.linkedin.com/in/riya-ranjan-jha-751688249/" target="_blank">
         <button className="bg-gray-900 text-white py-3 px-8 text-xl rounded hover:bg-gray-600  transition delay-75 dark:bg-gray-700 dark:hover:bg-gray-600">
-          Hire me
+          LinkedIn
         </button>
       </a>
     </div>
