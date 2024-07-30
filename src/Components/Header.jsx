@@ -53,14 +53,7 @@ const Header = () => {
               Home
             </a>
           </li>
-          <li>
-            <a
-              href="#about"
-              className="px-4 py-2 rounded-full hover:bg-white hover:text-purple-600 transition text-white duration-300 ease-in-out  dark:hover:bg-purple-600 dark:hover:text-white dark:text-black"
-            >
-              About
-            </a>
-          </li>
+          
           <li>
             <a
               target="_blank"
@@ -127,11 +120,7 @@ const Header = () => {
                 Home
               </a>
             </li>
-            <li className="hover:underline transition ease-in-out duration-200">
-              <a href="#about" className="px-4 py-2 text-2xl">
-                About
-              </a>
-            </li>
+            
             <li className="hover:underline transition ease-in-out duration-200">
               <a
                 href="https://drive.google.com/file/d/1ZQmQpFa8dzoM6tVPccr0tD_0GrYTg4gT/view"

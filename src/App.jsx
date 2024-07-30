@@ -8,7 +8,7 @@ import Footer from "./Components/Footer";
 import AboutUs from "./Components/About";
 
 const App = () => (
-  <div id="top" className="font-sans">
+  <div id="top" className="font-sans bg-[azure]">
     <a href="#top">
       <img
         src="https://cdn-icons-png.freepik.com/256/15992/15992789.png?ga=GA1.1.224769648.1717002388&semt=ais_hybrid"
