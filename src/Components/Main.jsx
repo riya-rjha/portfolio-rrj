@@ -3,7 +3,7 @@ import bgImage from "../Images/bg.png";
 import { ReactTyped } from "react-typed";
 
 const Main = () => (
-  <main className="text-center bg-white">
+  <main className="text-center bg-white dark:bg-black">
     <div className="flex items-center justify-around">
       <div className="flex-flex-col items-start p-10">
         <h1 className="text-3xl sm:text-3xl md:text-5xl font-bold my-2 md:my-4 text-orange-500 flex items-start justify-center flex-col">
@@ -33,7 +33,7 @@ const Main = () => (
           programming journey brings for me!
         </p>
       </div>
-      <img src={bgImage} className="w-[350px] h-[350px] rounded-full border-orange-600 border-8" />
+      <img src={bgImage} className="w-[350px] h-[350px] rounded-full border-orange-500 border-8" />
     </div>
   </main>
 );
