@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 import ThemeToggle from "./ThemeToggleHead";
 import ThemeToggleHamBurger from "./ThemeToggleHamBurger";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const location = useLocation().pathname;
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -15,12 +18,12 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 flex justify-between items-center p-6  bg-opacity-60 backdrop-blur-md text-white shadow-lg z-50 bg-purple-900 dark:bg-opacity-70 dark:text-white dark:bg-purple-200">
-      <a href="">
+    <header className="sticky top-0 flex justify-between items-center p-6  bg-opacity-60 backdrop-blur-md text-white shadow-lg z-50 bg-purple-800 dark:bg-opacity-70 dark:text-white dark:bg-purple-200">
+      <Link to="/">
         <div className="text-2xl text-black font-extrabold tracking-wide logo-name dark:text-black">
           RRJ
         </div>
-      </a>
+      </Link>
       <div className="md:hidden">
         <button onClick={toggleMenu} className="text-white focus:outline-none">
           {isOpen ? (
@@ -46,12 +49,12 @@ const Header = () => {
       <nav className="hidden md:flex">
         <ul className="flex space-x-6 text-base">
           <li>
-            <a
-              href="/"
+            <Link
+              to="/"
               className="px-4 py-2 dark:text-white dark:bg-purple-600 bg-white text-purple-600 rounded-full hover:bg-purple-600 hover:text-white dark:hover:text-white dark:hover:bg-black transition duration-300 ease-in-out"
             >
               Home
-            </a>
+            </Link>
           </li>
 
           <li>
@@ -64,20 +67,20 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <a
-              href="#project"
+            <Link
+              to="/project"
               className="px-4 py-2  text-white rounded-full hover:bg-white hover:text-purple-600 transition duration-300 ease-in-out dark:hover:bg-purple-600 dark:hover:text-white dark:text-black"
             >
               Projects
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#articles"
+            <Link
+              to="/articles"
               className="px-4 py-2 rounded-full hover:bg-white hover:text-purple-600 transition text-white duration-300 ease-in-out dark:hover:bg-purple-600 dark:hover:text-white dark:text-black"
             >
               Articles
-            </a>
+            </Link>
           </li>
           <li>
             <a
@@ -88,12 +91,12 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <a
-              href="#socials"
+            <Link
+              to="/contact"
               className="px-4 py-2 rounded-full hover:bg-white hover:text-purple-600 transition text-white duration-300 ease-in-out dark:hover:bg-purple-600 dark:hover:text-white dark:text-black"
             >
-              Socials
-            </a>
+              Contact
+            </Link>
           </li>
           <ThemeToggle />
         </ul>
@@ -145,9 +148,9 @@ const Header = () => {
               </a>
             </li>
             <li className="hover:underline transition ease-in-out duration-200">
-              <a href="#socials" className="px-4 py-2 text-2xl">
-                Socials
-              </a>
+              <Link to="/contact" className="px-4 py-2 text-2xl">
+                Contact
+              </Link>
             </li>
             <ThemeToggleHamBurger />
           </ul>

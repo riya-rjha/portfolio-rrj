@@ -5,13 +5,16 @@ import RecipeApplication from "../Images/RecipeApplication.png";
 import QuoteGen from "../Images/QuoteGen.png";
 import QuizApp from "../Images/QuizApp.png";
 import EmailValid from "../Images/EmailValid.png";
-import Skills from "./Skills";
-import PasswordGen from '../Images/PasswordGen.png';
-import QRCode from '../Images/QRCode.png';
-import Calculator from '../Images/Calculator.png';
-import BlogApp from '../Images/BlogApp.png'
+import PasswordGen from "../Images/PasswordGen.png";
+import QRCode from "../Images/QRCode.png";
+import Calculator from "../Images/Calculator.png";
+import BlogApp from "../Images/BlogApp.png";
+import { Link, useLocation } from "react-router-dom";
 
 const Projects = () => {
+  const location = useLocation();
+  // console.log(location.pathname);
+
   const projects = [
     {
       name: "Blog Application ",
@@ -97,75 +100,147 @@ const Projects = () => {
   ];
 
   return (
-    <section id="project" className="p-6 md:p-12">
-      <h2 className="text-3xl md:text-4xl mb-8 font-bold all-headings tracking-wide text-center">My Projects</h2>
-      <div className="space-y-12">
-        {projects.map((project, index) => (
-          <div
-            key={index}
-            className="bg-white text-gray-800 shadow-lg p-6 rounded-lg flex flex-col md:flex-row items-center transform transition duration-500 hover:scale-105"
-          >
-            <div className="md:w-1/2 md:pr-6">
-              <h3 className="text-3xl font-bold mb-4 uppercase">{project.name}</h3>
-              <p className="mb-4 text-lg">
-                <span className="font-bold">Tech Stack: </span>{project.tech}
-              </p>
-              <p className="mb-4">{project.description}</p>
-              <div className="flex flex-col space-y-2">
-                <a 
-                  href={project.url} 
-                  target="_blank" 
+    <section
+      id="project"
+      className={`p-6 ${
+        location.pathname === "/project" ? "mt-0" : "mt-20"
+      } md:p-12 bg-[url('https://img.freepik.com/free-vector/monochromatic-hand-painted-background-with-drawn-nature-elements_52683-63007.jpg?ga=GA1.1.448448890.1721050418&semt=ais_hybrid')] bg-no-repeat bg-cover dark:bg-[url('https://img.freepik.com/premium-photo/dark-background-with-silver-blue-pattern-with-words-blue-moon-it_1290686-20842.jpg?ga=GA1.1.448448890.1721050418&semt=ais_hybrid')] `}
+    >
+      <h2 className="text-3xl md:text-4xl mb-8 font-bold all-headings tracking-wide text-center all-headings dark:text-white">
+        My Projects
+      </h2>
+      {location.pathname !== "/project" && (
+        <>
+          <div className="flex flex-wrap justify-center gap-20 p-6">
+            {projects.map((project, index) => (
+              <div
+                key={index}
+                className="bg-white text-gray-800 shadow-lg p-4 rounded-lg flex flex-col items-start transition-transform transform hover:scale-105 hover:shadow-xl w-[35rem] hover:delay-100"
+              >
+                <h3 className="text-3xl project-headings mb-2 text-gray-900 uppercase text-center">
+                  {project.name}
+                </h3>
+
+                <img
+                  src={project.img}
+                  alt={project.name}
+                  className="w-full h-[16rem] object-cover rounded-lg mb-4 border border-gray-200"
+                />
+                <div className="flex w-full justify-between ">
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-gray-500 text-white py-2 px-4 rounded-lg text-center transition duration-300 hover:bg-gray-600 text-lg"
+                  >
+                    GitHub
+                  </a>
+                  <a
+                    href={project.site}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className=" text-white bg-purple-500 py-2 px-4 rounded-lg text-center transition duration-300 hover:bg-purple-600 text-lg"
+                  >
+                    Website
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </>
+      )}
+
+      {location.pathname === "/project" && (
+        <>
+          <div className="space-y-12">
+            {projects.map((project, index) => (
+              <div
+                key={index}
+                className="bg-white text-gray-800 shadow-lg p-6 rounded-lg flex flex-col md:flex-row items-center transform transition duration-500 hover:scale-105"
+              >
+                <div className="md:w-1/2 md:pr-6">
+                  <h3 className="text-3xl font-bold mb-4 uppercase">
+                    {project.name}
+                  </h3>
+                  <p className="mb-4 text-lg">
+                    <span className="font-bold">Tech Stack: </span>
+                    {project.tech}
+                  </p>
+                  <p className="mb-4">{project.description}</p>
+                  <div className="flex flex-col space-y-2">
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-orange-400 text-white py-2 px-4 rounded-lg text-center transition duration-300 hover:bg-orange-600"
+                    >
+                      View on GitHub
+                    </a>
+                    <a
+                      href={project.site}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-orange-400 text-white py-2 px-4 rounded-lg text-center transition duration-300 hover:bg-orange-600"
+                    >
+                      Explore Website Now
+                    </a>
+                  </div>
+                </div>
+                <div className="md:w-1/2 mt-6 md:mt-0">
+                  <img
+                    src={project.img}
+                    alt={project.name}
+                    className="w-full h-64 object-cover rounded-lg shadow-md"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        </>
+      )}
+
+      {location.pathname === "/project" && (
+        <>
+          <h2 className="text-3xl md:text-4xl mb-8 mt-16 font-bold tracking-wide text-center">
+            Mini Projects
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {miniProjects.map((miniProject, index) => (
+              <div
+                key={index}
+                className="bg-white text-gray-800 shadow-lg p-6 rounded-lg transform transition duration-500 hover:scale-105"
+              >
+                <h3 className="text-xl font-bold mb-4">{miniProject.name}</h3>
+                <img
+                  src={miniProject.img}
+                  alt={miniProject.name}
+                  className="w-full h-32 object-cover rounded-lg shadow-md mb-4"
+                />
+                <p className="mb-4">{miniProject.description}</p>
+                <a
+                  href={miniProject.url}
+                  target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-orange-400 text-white py-2 px-4 rounded-lg text-center transition duration-300 hover:bg-orange-600"
+                  className="bg-orange-400 text-white py-2 px-4 rounded-lg text-center transition duration-300 hover:bg-orange-600 block"
                 >
                   View on GitHub
                 </a>
-                <a 
-                  href={project.site} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="bg-orange-400 text-white py-2 px-4 rounded-lg text-center transition duration-300 hover:bg-orange-600"
-                >
-                  Explore Website Now
-                </a>
               </div>
-            </div>
-            <div className="md:w-1/2 mt-6 md:mt-0">
-              <img
-                src={project.img}
-                alt={project.name}
-                className="w-full h-64 object-cover rounded-lg shadow-md"
-              />
-            </div>
+            ))}
           </div>
-        ))}
-      </div>
-      <Skills />
-      <h2 className="text-3xl md:text-4xl mb-8 mt-16 font-bold tracking-wide text-center">Mini Projects</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {miniProjects.map((miniProject, index) => (
-          <div
-            key={index}
-            className="bg-white text-gray-800 shadow-lg p-6 rounded-lg transform transition duration-500 hover:scale-105"
-          >
-            <h3 className="text-xl font-bold mb-4">{miniProject.name}</h3>
-            <img
-              src={miniProject.img}
-              alt={miniProject.name}
-              className="w-full h-32 object-cover rounded-lg shadow-md mb-4"
-            />
-            <p className="mb-4">{miniProject.description}</p>
-            <a 
-              href={miniProject.url} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="bg-orange-400 text-white py-2 px-4 rounded-lg text-center transition duration-300 hover:bg-orange-600 block"
-            >
-              View on GitHub
-            </a>
+        </>
+      )}
+      {location.pathname !== "/project" && (
+        <>
+          <div className="flex justify-center items-center w-full mt-10">
+            <Link to="/project">
+              <button className=" p-4 hover:bg-purple-700 rounded-full text-white text-xl w-[300px] bg-purple-600 transition-all delay-75">
+                Explore Projects{" "}
+              </button>
+            </Link>
           </div>
-        ))}
-      </div>
+        </>
+      )}
     </section>
   );
 };
