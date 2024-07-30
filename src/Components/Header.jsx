@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
-import ThemeToggle from './ThemeToggleHead';
-import ThemeToggleHamBurger from './ThemeToggleHamBurger';
+import ThemeToggle from "./ThemeToggleHead";
+import ThemeToggleHamBurger from "./ThemeToggleHamBurger";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +15,7 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 flex justify-between items-center p-6 bg-black bg-opacity-70 backdrop-blur-md dark:backdrop-blur-md text-white shadow-lg z-50 dark:bg-white dark:bg-opacity-80 ">
+    <header className="sticky top-0 flex justify-between items-center p-6  bg-opacity-60 backdrop-blur-md text-white shadow-lg z-50 bg-purple-900 dark:bg-opacity-70 dark:text-white dark:bg-purple-200">
       <a href="">
         <div className="text-2xl text-black font-extrabold tracking-wide logo-name dark:text-black">
           RRJ
@@ -53,7 +53,7 @@ const Header = () => {
               Home
             </a>
           </li>
-          
+
           <li>
             <a
               target="_blank"
@@ -95,7 +95,7 @@ const Header = () => {
               Socials
             </a>
           </li>
-        <ThemeToggle />
+          <ThemeToggle />
         </ul>
       </nav>
       <Transition
@@ -120,7 +120,7 @@ const Header = () => {
                 Home
               </a>
             </li>
-            
+
             <li className="hover:underline transition ease-in-out duration-200">
               <a
                 href="https://drive.google.com/file/d/1ZQmQpFa8dzoM6tVPccr0tD_0GrYTg4gT/view"

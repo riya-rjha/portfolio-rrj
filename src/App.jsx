@@ -5,7 +5,6 @@ import Projects from "./Components/Projects";
 import Experience from "./Components/Experience";
 import Articles from "./Components/Articles";
 import Footer from "./Components/Footer";
-import AboutUs from "./Components/About";
 
 const App = () => (
   <div id="top" className="font-sans bg-[azure]">
@@ -18,9 +17,8 @@ const App = () => (
     </a>
     <Header />
     <Main />
-    <AboutUs />
-    <Projects />
     <Experience />
+    <Projects />
     <Articles />
     <Footer />
   </div>
