@@ -85,7 +85,7 @@ const Header = () => {
           {location !== "/" ? (
             <li>
               <Link
-                to='/#experience'
+                to="/#experience"
                 className="px-4 py-2 rounded-full hover:bg-white hover:text-purple-600 transition text-white duration-300 ease-in-out dark:hover:bg-purple-600 dark:hover:text-white dark:text-black"
               >
                 Experiences
@@ -145,19 +145,19 @@ const Header = () => {
               </a>
             </li>
             <li className="hover:underline transition ease-in-out duration-200">
-              <a href="#project" className="px-4 py-2 text-2xl">
+              <Link to="/project" className="px-4 py-2 text-2xl">
                 Projects
-              </a>
+              </Link>
             </li>
             <li className="hover:underline transition ease-in-out duration-200">
-              <a href="#articles" className="px-4 py-2 text-2xl">
+              <Link to="/articles" className="px-4 py-2 text-2xl">
                 Articles
-              </a>
+              </Link>
             </li>
             <li className="hover:underline transition ease-in-out duration-200">
-              <a href="#experience" className="px-4 py-2 text-2xl">
+              <Link to="/#experience" className="px-4 py-2 text-2xl">
                 Experience
-              </a>
+              </Link>
             </li>
             <li className="hover:underline transition ease-in-out duration-200">
               <Link to="/contact" className="px-4 py-2 text-2xl">

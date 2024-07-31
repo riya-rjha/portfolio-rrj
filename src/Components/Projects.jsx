@@ -109,13 +109,13 @@ const Projects = () => {
   const animatedContent = (index) => {
     switch (index % 4) {
       case 0:
-        return "fade-right";
+        return "zoom-in-right";
       case 1:
-        return "fade-left";
+        return "zoom-in-left";
       case 2:
-        return "fade-right";
+        return "zoom-in-right";
       default:
-        return "fade-left";
+        return "zoom-in-left";
     }
   };
 
