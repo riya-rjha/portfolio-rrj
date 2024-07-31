@@ -82,14 +82,26 @@ const Header = () => {
               Articles
             </Link>
           </li>
-          <li>
-            <a
-              href="#experience"
-              className="px-4 py-2 rounded-full hover:bg-white hover:text-purple-600 transition text-white duration-300 ease-in-out dark:hover:bg-purple-600 dark:hover:text-white dark:text-black"
-            >
-              Experiences
-            </a>
-          </li>
+          {location !== "/" ? (
+            <li>
+              <Link
+                to='/#experience'
+                className="px-4 py-2 rounded-full hover:bg-white hover:text-purple-600 transition text-white duration-300 ease-in-out dark:hover:bg-purple-600 dark:hover:text-white dark:text-black"
+              >
+                Experiences
+              </Link>
+            </li>
+          ) : (
+            <li>
+              <a
+                href="#experience"
+                className="px-4 py-2 rounded-full hover:bg-white hover:text-purple-600 transition text-white duration-300 ease-in-out dark:hover:bg-purple-600 dark:hover:text-white dark:text-black"
+              >
+                Experiences
+              </a>
+            </li>
+          )}
+
           <li>
             <Link
               to="/contact"

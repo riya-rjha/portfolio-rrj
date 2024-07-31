@@ -28,6 +28,7 @@ const App = () => (
             <Experience />
             <Projects/>
             <Skills/>
+            <Contact/>
             <Socials />
           </>
         }

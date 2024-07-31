@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 
 const Experience = () => {
   AOS.init({
-    duration: 1500,
+    duration: 500,
     easing: "ease-out",
     once: true,
   });
@@ -22,7 +22,7 @@ const Experience = () => {
           className="relative bg-gradient-to-r from-purple-100 to-gray-100 p-6 rounded-lg shadow-lg border-l-8 border-purple-800 hover:shadow-xl transition-shadow duration-300"
           data-aos="zoom-in-right"
           data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
         >
           <h3 className="text-xl md:text-2xl font-bold text-green-700 mb-4">
             GeeksForGeeks
@@ -62,7 +62,7 @@ const Experience = () => {
           className="relative bg-gradient-to-r from-purple-100 to-gray-100 p-6 rounded-lg shadow-lg border-l-8 border-purple-800 hover:shadow-xl transition-shadow duration-300"
           data-aos="zoom-in-left"
           data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
         >
           <h3 className="text-xl md:text-2xl font-bold text-[#61351A] mb-4">
             CodeChef ABESEC Chapter
@@ -102,7 +102,7 @@ const Experience = () => {
           className="relative bg-gradient-to-r from-purple-100 to-gray-100 p-6 rounded-lg shadow-lg border-l-8 border-purple-800 hover:shadow-xl transition-shadow duration-300"
           data-aos="zoom-in-right"
           data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
         >
           <div className="absolute md:left-[7.5%] left-[11%] md:top-[7rem] top-[6rem] transform -translate-x-1/2  h-20 border-l-4 border-purple-600"></div>
           <h3 className="text-xl md:text-2xl font-bold text-[#61351A] mb-4">
@@ -142,7 +142,7 @@ const Experience = () => {
           className="relative bg-gradient-to-r from-purple-100 to-gray-100 p-6 rounded-lg shadow-lg border-l-8 border-purple-800 hover:shadow-xl transition-shadow duration-300"
           data-aos="zoom-in-left"
           data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
         >
           <div className="absolute md:left-[7.5%] left-[11%] md:top-[7rem] top-[6rem]  transform -translate-x-1/2 h-20 border-l-4 border-purple-600"></div>
           <h3 className="text-xl md:text-2xl font-bold text-[#350d55] mb-4">

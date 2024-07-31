@@ -17,7 +17,7 @@ const Projects = () => {
   const location = useLocation();
 
   AOS.init({
-    duration: 1500,
+    duration: 700,
     easing: "ease-out",
     once: true,
   });
@@ -30,7 +30,7 @@ const Projects = () => {
       img: BlogApp,
       description:
         "A full stack blog application built using React.js & its libraries. Features include user authentication, write, edit, delete, update a blog post.",
-      tech: "MERN + Redux + Multer",
+      tech: "MERN + Redux ",
     },
     {
       name: "Amazon Clone",
@@ -109,19 +109,16 @@ const Projects = () => {
   const animatedContent = (index) => {
     switch (index % 4) {
       case 0:
-        return "zoom-in-right";
+        return "fade-right";
       case 1:
-        return "zoom-in-left";
+        return "fade-left";
       case 2:
-        return "zoom-in-right";
+        return "fade-right";
       default:
-        return "zoom-in-left";
+        return "fade-left";
     }
   };
 
-  const getDelay = (index) => {
-    return index * 300;
-  };
 
   return (
     <section
@@ -138,7 +135,6 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               data-aos={animatedContent(index)}
-              data-aos-delay={getDelay(index)}
               data-aos-anchor-placement="top-bottom"
               key={index}
               className="bg-white text-gray-800 shadow-lg p-4 rounded-lg flex flex-col items-start transition-transform transform hover:scale-105 hover:shadow-xl w-full !important"
@@ -183,10 +179,10 @@ const Projects = () => {
                 className="bg-white text-gray-800 shadow-lg p-6 rounded-lg flex flex-col md:flex-row items-center transform transition duration-500 hover:scale-105"
               >
                 <div className="md:w-1/2 md:pr-6">
-                  <h3 className="text-2xl font-bold mb-4 uppercase">
+                  <h3 className="text-2xl mb-4 uppercase all-headings ">
                     {project.name}
                   </h3>
-                  <p className="mb-4 text-base">
+                  <p className="mb-4 text-xl">
                     <span className="font-bold">Tech Stack: </span>
                     {project.tech}
                   </p>
@@ -196,7 +192,7 @@ const Projects = () => {
                       href={project.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-orange-400 text-white py-2 px-4 rounded-lg text-center transition duration-300 hover:bg-orange-600 text-sm"
+                      className="bg-purple-500 text-white py-2 px-4 rounded-lg text-center transition duration-300 hover:bg-purple-600 text-sm"
                     >
                       View on GitHub
                     </a>
@@ -204,7 +200,7 @@ const Projects = () => {
                       href={project.site}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-orange-400 text-white py-2 px-4 rounded-lg text-center transition duration-300 hover:bg-orange-600 text-sm"
+                      className="bg-purple-500 text-white py-2 px-4 rounded-lg text-center transition duration-300 hover:bg-purple-600 text-sm"
                     >
                       Explore Website Now
                     </a>
@@ -225,7 +221,7 @@ const Projects = () => {
 
       {location.pathname === "/project" && (
         <>
-          <h2 className="text-2xl md:text-3xl mb-8 mt-16 font-bold tracking-wide text-center">
+          <h2 className="text-2xl md:text-4xl all-headings mb-8 mt-16 font-bold tracking-wide text-center">
             Mini Projects
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
@@ -245,7 +241,7 @@ const Projects = () => {
                   href={miniProject.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-orange-400 text-white py-2 px-4 rounded-lg text-center transition duration-300 hover:bg-orange-600 block text-sm"
+                  className="bg-purple-500 text-white py-2 px-4 rounded-lg text-center transition duration-300 hover:bg-purple-600 block text-sm"
                 >
                   View on GitHub
                 </a>
