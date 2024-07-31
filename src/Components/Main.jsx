@@ -13,6 +13,7 @@ const Main = () => (
             <ReactTyped
               strings={[
                 "Frontend Web Developer",
+                "Backend Web Developer",
                 "Technical Content Writer",
                 "Prompt Engineer",
                 "UI Designer",

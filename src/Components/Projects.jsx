@@ -10,14 +10,21 @@ import QRCode from "../Images/QRCode.png";
 import Calculator from "../Images/Calculator.png";
 import BlogApp from "../Images/BlogApp.png";
 import { Link, useLocation } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Projects = () => {
   const location = useLocation();
-  // console.log(location.pathname);
+
+  AOS.init({
+    duration: 1500,
+    easing: "ease-out",
+    once: true,
+  });
 
   const projects = [
     {
-      name: "Blog Application ",
+      name: "Blog Application",
       url: "https://github.com/riya-rjha/Full-Stack-Blog-App/tree/main",
       site: "https://client-blog-app-self.vercel.app/",
       img: BlogApp,
@@ -99,6 +106,23 @@ const Projects = () => {
     },
   ];
 
+  const animatedContent = (index) => {
+    switch (index % 4) {
+      case 0:
+        return "zoom-in-right";
+      case 1:
+        return "zoom-in-left";
+      case 2:
+        return "zoom-in-right";
+      default:
+        return "zoom-in-left";
+    }
+  };
+
+  const getDelay = (index) => {
+    return index * 300;
+  };
+
   return (
     <section
       id="project"
@@ -106,48 +130,48 @@ const Projects = () => {
         location.pathname === "/project" ? "mt-0" : "mt-20"
       } md:p-12 bg-[url('https://img.freepik.com/free-vector/monochromatic-hand-painted-background-with-drawn-nature-elements_52683-63007.jpg?ga=GA1.1.448448890.1721050418&semt=ais_hybrid')] bg-no-repeat bg-cover dark:bg-[url('https://img.freepik.com/premium-photo/dark-background-with-silver-blue-pattern-with-words-blue-moon-it_1290686-20842.jpg?ga=GA1.1.448448890.1721050418&semt=ais_hybrid')] `}
     >
-      <h2 className="text-3xl md:text-4xl mb-8 font-bold all-headings tracking-wide text-center all-headings dark:text-white">
+      <h2 className="text-2xl md:text-3xl mb-8 font-bold all-headings tracking-wide text-center dark:text-white">
         My Projects
       </h2>
       {location.pathname !== "/project" && (
-        <>
-          <div className="flex flex-wrap justify-center gap-20 p-6">
-            {projects.map((project, index) => (
-              <div
-                key={index}
-                className="bg-white text-gray-800 shadow-lg p-4 rounded-lg flex flex-col items-start transition-transform transform hover:scale-105 hover:shadow-xl w-[35rem] hover:delay-100"
-              >
-                <h3 className="text-3xl project-headings mb-2 text-gray-900 uppercase text-center">
-                  {project.name}
-                </h3>
-
-                <img
-                  src={project.img}
-                  alt={project.name}
-                  className="w-full h-[16rem] object-cover rounded-lg mb-4 border border-gray-200"
-                />
-                <div className="flex w-full justify-between ">
-                  <a
-                    href={project.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-gray-500 text-white py-2 px-4 rounded-lg text-center transition duration-300 hover:bg-gray-600 text-lg"
-                  >
-                    GitHub
-                  </a>
-                  <a
-                    href={project.site}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className=" text-white bg-purple-500 py-2 px-4 rounded-lg text-center transition duration-300 hover:bg-purple-600 text-lg"
-                  >
-                    Website
-                  </a>
-                </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8 p-6">
+          {projects.map((project, index) => (
+            <div
+              data-aos={animatedContent(index)}
+              data-aos-delay={getDelay(index)}
+              data-aos-anchor-placement="top-bottom"
+              key={index}
+              className="bg-white text-gray-800 shadow-lg p-4 rounded-lg flex flex-col items-start transition-transform transform hover:scale-105 hover:shadow-xl w-full !important"
+            >
+              <h3 className="text-xl md:text-2xl font-bold mb-2 text-gray-900 uppercase text-center">
+                {project.name}
+              </h3>
+              <img
+                src={project.img}
+                alt={project.name}
+                className="w-full h-[12rem] md:h-[16rem] object-cover rounded-lg mb-4 border border-gray-200"
+              />
+              <div className="flex w-full justify-between">
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gray-500 text-white py-2 px-4 rounded-lg text-center transition duration-300 hover:bg-gray-600 text-sm md:text-base"
+                >
+                  GitHub
+                </a>
+                <a
+                  href={project.site}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white bg-purple-500 py-2 px-4 rounded-lg text-center transition duration-300 hover:bg-purple-600 text-sm md:text-base"
+                >
+                  Website
+                </a>
               </div>
-            ))}
-          </div>
-        </>
+            </div>
+          ))}
+        </div>
       )}
 
       {location.pathname === "/project" && (
@@ -159,20 +183,20 @@ const Projects = () => {
                 className="bg-white text-gray-800 shadow-lg p-6 rounded-lg flex flex-col md:flex-row items-center transform transition duration-500 hover:scale-105"
               >
                 <div className="md:w-1/2 md:pr-6">
-                  <h3 className="text-3xl font-bold mb-4 uppercase">
+                  <h3 className="text-2xl font-bold mb-4 uppercase">
                     {project.name}
                   </h3>
-                  <p className="mb-4 text-lg">
+                  <p className="mb-4 text-base">
                     <span className="font-bold">Tech Stack: </span>
                     {project.tech}
                   </p>
-                  <p className="mb-4">{project.description}</p>
+                  <p className="mb-4 text-sm">{project.description}</p>
                   <div className="flex flex-col space-y-2">
                     <a
                       href={project.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-orange-400 text-white py-2 px-4 rounded-lg text-center transition duration-300 hover:bg-orange-600"
+                      className="bg-orange-400 text-white py-2 px-4 rounded-lg text-center transition duration-300 hover:bg-orange-600 text-sm"
                     >
                       View on GitHub
                     </a>
@@ -180,7 +204,7 @@ const Projects = () => {
                       href={project.site}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-orange-400 text-white py-2 px-4 rounded-lg text-center transition duration-300 hover:bg-orange-600"
+                      className="bg-orange-400 text-white py-2 px-4 rounded-lg text-center transition duration-300 hover:bg-orange-600 text-sm"
                     >
                       Explore Website Now
                     </a>
@@ -201,27 +225,27 @@ const Projects = () => {
 
       {location.pathname === "/project" && (
         <>
-          <h2 className="text-3xl md:text-4xl mb-8 mt-16 font-bold tracking-wide text-center">
+          <h2 className="text-2xl md:text-3xl mb-8 mt-16 font-bold tracking-wide text-center">
             Mini Projects
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
             {miniProjects.map((miniProject, index) => (
               <div
                 key={index}
-                className="bg-white text-gray-800 shadow-lg p-6 rounded-lg transform transition duration-500 hover:scale-105"
+                className="bg-white text-gray-800 shadow-lg p-4 rounded-lg transform transition duration-500 hover:scale-105"
               >
-                <h3 className="text-xl font-bold mb-4">{miniProject.name}</h3>
+                <h3 className="text-lg font-bold mb-2">{miniProject.name}</h3>
                 <img
                   src={miniProject.img}
                   alt={miniProject.name}
                   className="w-full h-32 object-cover rounded-lg shadow-md mb-4"
                 />
-                <p className="mb-4">{miniProject.description}</p>
+                <p className="mb-2 text-sm">{miniProject.description}</p>
                 <a
                   href={miniProject.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-orange-400 text-white py-2 px-4 rounded-lg text-center transition duration-300 hover:bg-orange-600 block"
+                  className="bg-orange-400 text-white py-2 px-4 rounded-lg text-center transition duration-300 hover:bg-orange-600 block text-sm"
                 >
                   View on GitHub
                 </a>
@@ -230,16 +254,15 @@ const Projects = () => {
           </div>
         </>
       )}
+
       {location.pathname !== "/project" && (
-        <>
-          <div className="flex justify-center items-center w-full mt-10">
-            <Link to="/project">
-              <button className=" p-4 hover:bg-purple-700 rounded-full text-white text-xl w-[300px] bg-purple-600 transition-all delay-75">
-                Explore Projects{" "}
-              </button>
-            </Link>
-          </div>
-        </>
+        <div className="flex justify-center items-center w-full mt-10">
+          <Link to="/project">
+            <button className="p-4 bg-purple-600 text-white text-lg w-[300px] rounded-full transition-transform transform hover:scale-105 hover:bg-purple-700">
+              Explore Projects
+            </button>
+          </Link>
+        </div>
       )}
     </section>
   );
