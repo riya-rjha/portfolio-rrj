@@ -36,7 +36,7 @@ const Main = () => (
             />
           </span>
         </h1>
-        <p className="text-base sm:text-lg text-center lg:text-left">
+        <p className="text-black dark:text-white sm:text-lg text-center lg:text-left">
           A Java programmer with a passion for learning and a positive attitude,
           I have experience in design and development & am currently expanding
           my skillset by exploring UI/UX design and Next.js. Programming ignites

@@ -4,24 +4,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-:root {
-  --primary-color: #f97316;
-  --background-color: #ffffff;
-  --text-color: #000000;
-  --heading-color: #333333;
-  --subheading-color: #666666;
-  --border-color: #dddddd;
-}
-
-body.light-theme {
-  background-color: var(--background-color);
-  color: var(--text-color);
-}
-
-body.dark-theme {
-  background-color: #000000;
-  color: #e4e4e7;
-}
 
 * {
   margin: 0;

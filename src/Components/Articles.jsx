@@ -20,7 +20,7 @@ const Articles = () => (
     id="articles"
     className="p-4 md:p-8 bg-[url('https://img.freepik.com/free-vector/monochromatic-hand-painted-background-with-drawn-nature-elements_52683-63007.jpg?ga=GA1.1.448448890.1721050418&semt=ais_hybrid')] bg-no-repeat bg-cover dark:bg-[url('https://img.freepik.com/premium-photo/dark-background-with-silver-blue-pattern-with-words-blue-moon-it_1290686-20842.jpg?ga=GA1.1.448448890.1721050418&semt=ais_hybrid')]"
   >
-    <h2 className="text-2xl md:text-4xl font-bold my-6 text-center all-headings">
+    <h2 className="text-2xl dark:text-white md:text-4xl font-bold my-6 text-center all-headings">
       My Articles
     </h2>
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

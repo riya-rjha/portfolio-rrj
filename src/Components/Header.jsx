@@ -25,7 +25,7 @@ const Header = () => {
         </div>
       </Link>
       <div className="md:hidden">
-        <button onClick={toggleMenu} className="text-white focus:outline-none">
+        <button onClick={toggleMenu} className="text-white dark:text-black focus:outline-none">
           {isOpen ? (
             <p></p>
           ) : (
@@ -131,9 +131,9 @@ const Header = () => {
           </div>
           <ul className="flex flex-col space-y-4 text-base">
             <li className="hover:underline transition ease-in-out duration-200">
-              <a href="#home" className="px-4 py-2 text-2xl">
+              <Link to='/' className="px-4 py-2 text-2xl">
                 Home
-              </a>
+              </Link>
             </li>
 
             <li className="hover:underline transition ease-in-out duration-200">

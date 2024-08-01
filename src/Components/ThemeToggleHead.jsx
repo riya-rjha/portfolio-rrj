@@ -3,16 +3,14 @@ import { MdDarkMode } from "react-icons/md";
 import { CiLight } from "react-icons/ci";
 
 const ThemeToggle = () => {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
-      document.body.classList.add("dark-theme");
     } else {
       document.documentElement.classList.remove("dark");
-      document.body.classList.remove("dark-theme");
     }
   }, [theme]);
 
