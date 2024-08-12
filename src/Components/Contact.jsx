@@ -1,12 +1,57 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { enqueueSnackbar } from "notistack";
 
 const Contact = () => {
   const location = useLocation().pathname;
 
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        `${import.meta.env.VITE_SERVICEID}`,
+        `${import.meta.env.VITE_TEMPLATEID}`,
+        form.current,
+        {
+          publicKey: `${import.meta.env.VITE_PUBLICKEY}`,
+        }
+      )
+      .then(
+        () => {
+          // enqueueSnackbar("Email sent successfully", {
+          //   variant: "success",
+          //   anchorOrigin: {
+          //     vertical: "top",
+          //     horizontal: "right",
+          //   },
+          //   autoHideDuration: 3000,
+          // });
+          console.log("Success");
+        },
+        (error) => {
+          // enqueueSnackbar("Network Error", {
+          //   variant: "failure",
+          //   anchorOrigin: {
+          //     vertical: "top",
+          //     horizontal: "right",
+          //   },
+          //   autoHideDuration: 3000,
+          // });
+          console.log(error.message);
+        }
+      );
+  };
+
   return (
     <div
-      className={` ${location === '/' ? "mt-16" : "mt-0"}  min-h-screen bg-[url('https://img.freepik.com/free-vector/monochromatic-hand-painted-background-with-drawn-nature-elements_52683-63007.jpg?ga=GA1.1.448448890.1721050418&semt=ais_hybrid')] dark:bg-[url('https://img.freepik.com/premium-photo/dark-background-with-silver-blue-pattern-with-words-blue-moon-it_1290686-20842.jpg?ga=GA1.1.448448890.1721050418&semt=ais_hybrid')] bg-cover bg-no-repeat flex flex-col items-center justify-center p-6`}
+      className={` ${
+        location === "/" ? "mt-16" : "mt-0"
+      }  min-h-screen bg-[url('https://img.freepik.com/free-vector/monochromatic-hand-painted-background-with-drawn-nature-elements_52683-63007.jpg?ga=GA1.1.448448890.1721050418&semt=ais_hybrid')] dark:bg-[url('https://img.freepik.com/premium-photo/dark-background-with-silver-blue-pattern-with-words-blue-moon-it_1290686-20842.jpg?ga=GA1.1.448448890.1721050418&semt=ais_hybrid')] bg-cover bg-no-repeat flex flex-col items-center justify-center p-6`}
     >
       <div className="text-center mb-8">
         <h1 className="text-4xl font-bold text-purple-800 mb-4 dark:text-purple-400">
@@ -17,7 +62,10 @@ const Contact = () => {
           I'd love to hear from you.
         </p>
       </div>
-      <form className="bg-purple-200 dark:bg-white text-black rounded-lg shadow-lg p-8 max-w-lg w-full">
+      <form
+        ref={form}
+        className="bg-purple-200 dark:bg-white text-black rounded-lg shadow-lg p-8 max-w-lg w-full"
+      >
         <div className="mb-4">
           <label htmlFor="name" className="block text-md font-semibold mb-2">
             Name
@@ -25,7 +73,7 @@ const Contact = () => {
           <input
             type="text"
             id="name"
-            name="name"
+            name="user_name"
             placeholder="Your Name"
             required
             className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
@@ -38,7 +86,7 @@ const Contact = () => {
           <input
             type="email"
             id="email"
-            name="email"
+            name="user_email"
             placeholder="Your Email"
             required
             className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
@@ -46,14 +94,14 @@ const Contact = () => {
         </div>
         <div className="mb-6">
           <label
-            htmlFor="feedback"
+            htmlFor="message"
             className="block text-md font-semibold mb-2"
           >
             Feedback
           </label>
           <textarea
             id="feedback"
-            name="feedback"
+            name="message"
             placeholder="Your Message"
             rows="5"
             required
@@ -63,6 +111,7 @@ const Contact = () => {
         <button
           type="submit"
           className="w-full py-3 bg-purple-600 text-white font-semibold rounded-lg shadow-md hover:bg-purple-700 transition duration-300"
+          onClick={(e) => sendEmail(e)}
         >
           Send Message
         </button>

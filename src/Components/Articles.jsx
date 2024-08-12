@@ -136,7 +136,7 @@ const Articles = () => (
       ].map((article, index) => (
         <div
           key={index}
-          className="bg-purple-100 dark:bg-white shadow-md rounded p-4 flex flex-col items-center justify-center relative"
+          className="bg-purple-100 dark:bg-white shadow-md rounded p-4 flex flex-col items-center justify-center relative transition-all transform hover:scale-105"
         >
           <img
             src={article.image}
