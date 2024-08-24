@@ -178,7 +178,7 @@ const Skills = () => {
             data-aos="flip-left"
           >
             <img
-              src="https://sarthak-portfolio.onrender.com/images%202/skills/github1.png"
+              src="https://user-images.githubusercontent.com/25181517/192108374-8da61ba1-99ec-41d7-80b8-fb2f7c0a4948.png"
               className="w-20 h-20"
             />
             <div className="   p-[12px] rounded-lg shadow-xl w-full text-center mt-5 bg-white text-purple-800 text-xl font-semibold dark:bg-purple-600 dark:text-white" data-aos="zoom-in" >
@@ -222,7 +222,7 @@ const Skills = () => {
             data-aos="flip-left"
           >
             <img
-              src="https://sarthak-portfolio.onrender.com/images%202/skills/mongodb.png"
+              src="https://camo.githubusercontent.com/c1ee13c206959ffc6562949f4e9289c58dc5a9e747a1c03af46013cebb5c50ea/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6d6f6e676f64622f6d6f6e676f64622d69636f6e2e737667"
               className="w-20 h-20"
             />
             <div className="   p-[12px] rounded-lg shadow-xl w-full text-center mt-5 bg-white text-purple-800 text-xl font-semibold dark:bg-purple-600 dark:text-white" data-aos="zoom-in" >
