@@ -130,7 +130,7 @@ const Skills = () => {
             data-aos="flip-left"
           >
             <img
-              src="https://camo.githubusercontent.com/77139e445a39e2e6587d0d5c9abc370550e18eb8a3159bb5519abc0369b26e80/68747470733a2f2f69636f6e2e69636570616e656c2e696f2f546563686e6f6c6f67792f7376672f4e6f64652e6a732e737667"
+              src="https://user-images.githubusercontent.com/25181517/121401671-49102800-c959-11eb-9f6f-74d49a5e1774.png"
               className="w-20 h-20"
             />
             <div className="   p-[12px] rounded-lg shadow-xl w-full text-center mt-5 bg-white text-purple-800 text-xl font-semibold dark:bg-purple-600 dark:text-white" data-aos="zoom-in" >
@@ -142,7 +142,7 @@ const Skills = () => {
             data-aos="flip-left"
           >
             <img
-              src="https://camo.githubusercontent.com/0568e2de313626b2bd9b96f326941b012d45e9a4db1a23aa78bd8036207e57f8/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f7461696c77696e646373732f7461696c77696e646373732d69636f6e2e737667"
+              src="https://camo.githubusercontent.com/52643e404ca1a1d90beb0095ebddda4b16b8c30dfcfeb5d42355a2df037c7c8e/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f7461696c77696e646373732f7461696c77696e646373732d69636f6e2e737667"
               className="w-20 h-20 rounded-full"
             />
             <div className="   p-[12px] rounded-lg shadow-xl w-full text-center mt-5 bg-white text-purple-800 text-xl font-semibold dark:bg-purple-600 dark:text-white" data-aos="zoom-in" >
@@ -190,7 +190,7 @@ const Skills = () => {
             data-aos="flip-left"
           >
             <img
-              src="https://camo.githubusercontent.com/825bc22c1c4819762657b53f6491051ddc41482012d6fd8ae7b6b53776bf334e/68747470733a2f2f696d672e69636f6e73382e636f6d2f636f6c6f722f3435322f66697265626173652e706e67"
+              src="https://camo.githubusercontent.com/290a06b466f4c5644a2f382f13b2fda16534af0a3d890cfd59f824b43fd99610/68747470733a2f2f696d672e69636f6e73382e636f6d2f636f6c6f722f3435322f66697265626173652e706e67"
               className="w-20 h-20"
             />
             <div className="   p-[12px] rounded-lg shadow-xl w-full text-center mt-5 bg-white text-purple-800 text-xl font-semibold dark:bg-purple-600 dark:text-white" data-aos="zoom-in" >
@@ -222,7 +222,7 @@ const Skills = () => {
             data-aos="flip-left"
           >
             <img
-              src="https://camo.githubusercontent.com/c1ee13c206959ffc6562949f4e9289c58dc5a9e747a1c03af46013cebb5c50ea/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6d6f6e676f64622f6d6f6e676f64622d69636f6e2e737667"
+              src="https://camo.githubusercontent.com/3518c533e8249a2db786d7ba9340a25463cfa876acbe7647be8a01435a0dd59e/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6d6f6e676f64622f6d6f6e676f64622d69636f6e2e737667"
               className="w-20 h-20"
             />
             <div className="   p-[12px] rounded-lg shadow-xl w-full text-center mt-5 bg-white text-purple-800 text-xl font-semibold dark:bg-purple-600 dark:text-white" data-aos="zoom-in" >
