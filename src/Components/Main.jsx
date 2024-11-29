@@ -18,18 +18,18 @@ const Main = () => (
         data-aos="fade-up"
         data-aos-anchor-placement="top-center"
       >
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold my-4 text-purple-800 dark:text-purple-600 flex flex-col items-center lg:items-start">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold my-4 text-purple-800 dark:text-purple-600 flex flex-col items-center lg:items-start">
           <span className="mt-2">I'm Riya Ranjan Jha,</span>
           <br />
           <span className="text-black -mt-2 mb-6 dark:text-white">
             <ReactTyped
               strings={[
                 "Frontend Web Developer",
-                "Backend Web Developer",
+                "Java Programmer",
                 "Technical Content Writer",
                 "Prompt Engineer",
                 "UI Designer",
-                "UX Designer",
+                "Orator and Debater"
               ]}
               typeSpeed={100}
               loop

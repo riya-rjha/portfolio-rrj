@@ -25,7 +25,10 @@ const Header = () => {
         </div>
       </Link>
       <div className="md:hidden">
-        <button onClick={toggleMenu} className="text-white dark:text-black focus:outline-none">
+        <button
+          onClick={toggleMenu}
+          className="text-white dark:text-black focus:outline-none"
+        >
           {isOpen ? (
             <p></p>
           ) : (
@@ -60,7 +63,7 @@ const Header = () => {
           <li>
             <a
               target="_blank"
-              href="https://drive.google.com/file/d/1Xw2xbtsP8I8_NiQ1GbhDdyoymxeTSw13/view?usp=sharing"
+              href="https://drive.google.com/file/d/1U2ShHk63sIz6AXO7hti7NOxo7zRweOqA/view?usp=sharing"
               className="px-4 py-2  text-white rounded-full hover:bg-white hover:text-purple-600 transition duration-300 ease-in-out dark:hover:bg-purple-600 dark:hover:text-white dark:text-black"
             >
               Resume
@@ -131,14 +134,14 @@ const Header = () => {
           </div>
           <ul className="flex flex-col space-y-4 text-base">
             <li className="hover:underline transition ease-in-out duration-200">
-              <Link to='/' className="px-4 py-2 text-2xl">
+              <Link to="/" className="px-4 py-2 text-2xl">
                 Home
               </Link>
             </li>
 
             <li className="hover:underline transition ease-in-out duration-200">
               <a
-                href="https://drive.google.com/file/d/1ZQmQpFa8dzoM6tVPccr0tD_0GrYTg4gT/view"
+                href="https://drive.google.com/file/d/1U2ShHk63sIz6AXO7hti7NOxo7zRweOqA/view?usp=sharing"
                 className="px-4 py-2 text-2xl"
               >
                 Resume
