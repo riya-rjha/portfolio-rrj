@@ -25,8 +25,8 @@ const App = () => (
         element={
           <>
             <Main />
-            <Experience />
             <Projects/>
+            <Experience />
             <Skills/>
             <Contact/>
             <Socials />
