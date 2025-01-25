@@ -9,9 +9,11 @@ import PasswordGen from "../Images/PasswordGen.png";
 import QRCode from "../Images/QRCode.png";
 import Calculator from "../Images/Calculator.png";
 import BlogApp from "../Images/BlogApp.png";
+import TrendSpire from '../Images/TrendSpire.png';
 import { Link, useLocation } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { motion } from "motion/react";
 
 const Projects = () => {
   const location = useLocation();
@@ -21,10 +23,20 @@ const Projects = () => {
     easing: "ease-out",
     once: true,
   });
+  
 
   const projects = [
     {
-      name: "Blog Application",
+      name: "TrendSpire: E-commerce Site",
+      url: "https://github.com/riya-rjha/TrendSpire-E-CommerceSite",
+      site: "https://trend-spire-client.vercel.app/",
+      img: TrendSpire,
+      description:
+        "A full-stack e-commerce website built using **MERN stack** and **Gemini API** integration. Features include AI-powered product recommendations, real-time data insights, and seamless user interactions for a personalized shopping experience.",
+      tech: "MERN + Gemini API Integration ",
+    },
+    {
+      name: "BlogHub: Blog Application",
       url: "https://github.com/riya-rjha/Full-Stack-Blog-App/tree/main",
       site: "https://client-blog-app-self.vercel.app/",
       img: BlogApp,
@@ -118,7 +130,6 @@ const Projects = () => {
         return "zoom-in-left";
     }
   };
-
 
   return (
     <section
@@ -254,9 +265,14 @@ const Projects = () => {
       {location.pathname !== "/project" && (
         <div className="flex justify-center items-center w-full mt-10">
           <Link to="/project">
-            <button className="p-4 bg-purple-600 text-white text-lg w-[300px] rounded-full transition-transform transform hover:scale-105 hover:bg-purple-700">
-              Explore Projects
-            </button>
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <button className="p-4 bg-purple-600 text-white text-lg w-[300px] rounded-full  hover:bg-purple-700">
+                Explore Projects
+              </button>
+            </motion.button>
           </Link>
         </div>
       )}
