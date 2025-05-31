@@ -1,46 +1,39 @@
 import React from "react";
-import Header from "./Components/Header";
-import Main from "./Components/Main";
-import Projects from "./Components/Projects";
-import Experience from "./Components/Experience";
-import Articles from "./Components/Articles";
-import Socials from "./Components/Socials";
 import { Routes, Route } from "react-router-dom";
-import Skills from "./Components/Skills";
-import Contact from "./Components/Contact";
+import Hero from "./Components/Hero";
+import { motion, useScroll } from "motion/react";
+import Skills from "./pages/Skills";
+import Articles from "./pages/Articles";
+import Designs from "./pages/Designs"
+import Projects from "./pages/Projects"
 
-const App = () => (
-  <div id="top" className="font-sans bg-white">
-    <a href="#top">
-      <img
-        src="https://cdn-icons-png.freepik.com/256/15992/15992789.png?ga=GA1.1.224769648.1717002388&semt=ais_hybrid"
-        className="fixed w-16 bottom-5 right-5 z-50"
-        alt="Scroll to top"
-      />
-    </a>
-    <Header />
-    <Routes>
-      <Route
-        path="/"
-        element={
-          <>
-            <Main />
-            <Projects/>
-            <Experience />
-            <Skills/>
-            <Contact/>
-            <Socials />
-          </>
-        }
-      />
-    </Routes>
+const App = () => {
+  const { scrollYProgress } = useScroll();
 
-    <Routes>
-      <Route path="/project" element={<Projects />} />
-      <Route path="/articles" element={<Articles />} />
-      <Route path="/contact" element={<Contact />} />
-    </Routes>
-  </div>
-);
+  return (
+    <>
+      <Routes>
+        {/* <motion.div
+          style={{
+            scaleX: scrollYProgress,
+            position: "fixed",
+            top: 0,
+            left: 0,
+            right: 0,
+            height: 10,
+            originX: 0,
+            backgroundColor: "#aa49ff",
+          }}
+        /> */}
+        <Route path="/" element={<Hero />}></Route>
+        <Route path="/skill" element={<Skills />}></Route>
+        <Route path="/articles" element={<Articles />}></Route>
+        <Route path="/design" element={<Designs />}></Route>
+        <Route path="/projects" element={<Projects />}></Route>
+
+      </Routes>
+    </>
+  );
+};
 
 export default App;

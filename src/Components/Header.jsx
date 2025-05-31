@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
-import ThemeToggle from "./ThemeToggleHead";
-import ThemeToggleHamBurger from "./ThemeToggleHamBurger";
 import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
@@ -113,7 +111,6 @@ const Header = () => {
               Contact
             </Link>
           </li>
-          <ThemeToggle />
         </ul>
       </nav>
       <Transition
@@ -167,7 +164,6 @@ const Header = () => {
                 Contact
               </Link>
             </li>
-            <ThemeToggleHamBurger />
           </ul>
         </div>
       </Transition>
