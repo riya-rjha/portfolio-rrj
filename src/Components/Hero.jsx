@@ -7,14 +7,12 @@ import bgImage from "../Images/myImage.png";
 const Hero = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
 
-  // Preload image immediately
   useEffect(() => {
     const img = new Image();
     img.src = bgImage;
     img.onload = () => {
       setImageLoaded(true);
     };
-    // Start loading immediately
   }, []);
 
   return (
@@ -326,7 +324,7 @@ const Hero = () => {
                   <ReactTyped
                     strings={[
                       "Web Developer",
-                      "TCW",
+                      "Content Writer",
                       "UI/UX Designer",
                       "Debater",
                     ]}
@@ -514,11 +512,11 @@ const Hero = () => {
                     {" "}
                     I am a <br />
                   </p>
-                  <span className="typed-text italic font-black">
+                  <span className="typed-text font-black">
                     <ReactTyped
                       strings={[
                         "Web Developer",
-                        "TCW",
+                        "Content Writer",
                         "UI/UX Designer",
                         "Debater",
                       ]}
