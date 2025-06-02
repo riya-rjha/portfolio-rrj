@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Hero from "./Components/Hero";
@@ -6,12 +7,14 @@ import Articles from "./pages/Articles";
 import Designs from "./pages/Designs";
 import Projects from "./pages/Projects";
 import { motion, useScroll } from "framer-motion";
+import Navbar from "./Components/Navbar";
+import AnimatedCursor from "./Components/AnimatedCursor";
 
 const App = () => {
   const { scrollYProgress } = useScroll();
 
   return (
-    <>
+    <div>
       <motion.div
         style={{
           scaleX: scrollYProgress,
@@ -24,7 +27,11 @@ const App = () => {
           backgroundColor: "#aa49ff",
           zIndex: 50,
         }}
+        className="cursor-none"
       />
+
+      <Navbar />
+      <AnimatedCursor />
 
       <Routes>
         <Route path="/" element={<Hero />} />
@@ -33,7 +40,7 @@ const App = () => {
         <Route path="/design" element={<Designs />} />
         <Route path="/projects" element={<Projects />} />
       </Routes>
-    </>
+    </div>
   );
 };
 

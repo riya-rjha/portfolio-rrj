@@ -1,7 +1,7 @@
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { ReactTyped } from "react-typed";
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom"; // Add this import
 import bgImage from "../Images/myImage.png";
 
 const Hero = () => {
@@ -44,7 +44,6 @@ const Hero = () => {
           align-items: center;
           justify-content: center;
           transition: all 0.3s ease;
-          cursor: pointer;
           margin-top: 2rem;
           text-decoration: none;
           color: inherit;
@@ -99,6 +98,7 @@ const Hero = () => {
         .resume-button:active {
           transform: translateY(-1px);
         }
+
         .about-heading {
           font-family: 'Inter', sans-serif;
           font-weight: 600;
@@ -127,69 +127,8 @@ const Hero = () => {
         }
       `}</style>
 
-      {/* Glassmorphism Sticky Navbar */}
-      <div className="fixed top-4 md:top-6 left-1/2 transform -translate-x-1/2 z-50">
-        <motion.div
-          initial={{ y: -100, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{
-            type: "spring",
-            stiffness: 100,
-            damping: 25,
-            delay: 0.2,
-            duration: 0.8,
-          }}
-          className="navbar-glass rounded-full px-4 md:px-8 py-3 md:py-4 w-[85vw] max-w-[45rem]"
-        >
-          <div className="flex justify-evenly items-center text-xs md:text-base font-medium text-white bg-transparent">
-            <motion.span
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="hover:text-purple-400 cursor-pointer transition-all duration-300 border-b-2 border-purple-400 pb-1 px-2 bg-transparent"
-            >
-              <Link to="/projects" className="text-inherit no-underline">
-                Projects
-              </Link>
-            </motion.span>
-            <motion.span
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="hover:text-purple-400 cursor-pointer transition-all duration-300 px-2 bg-transparent"
-            >
-              <Link to="/articles" className="text-inherit no-underline">
-                Articles
-              </Link>
-            </motion.span>
-            <motion.span
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="hover:text-purple-400 cursor-pointer transition-all duration-300 px-2 bg-transparent"
-            >
-              <Link to="/web-designs" className="text-inherit no-underline">
-                Web Designs
-              </Link>
-            </motion.span>
-            <motion.span
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="hover:text-purple-400 cursor-pointer transition-all duration-300 px-2 bg-transparent"
-            >
-              <Link to="/skills" className="text-inherit no-underline">
-                Skills
-              </Link>
-            </motion.span>
-          </div>
-        </motion.div>
-      </div>
-
-      {/* Main Hero Content */}
       <div className="hero-container min-h-screen flex items-center">
         <div className="w-full max-w-7xl mx-auto px-6 md:px-10">
-          {/* Mobile Layout */}
           <div className="md:hidden flex flex-col items-center space-y-8">
             <motion.div
               initial={{ opacity: 0, x: -80 }}
@@ -556,8 +495,8 @@ const Hero = () => {
                   </a>
                 </motion.div>
                 <p className="text-emerald-400 text-sm font-bold">
-                  In BETA Mode, Changes are being made so some links won't be
-                  functioning as of now!
+                  In BETA Mode, Changes are being made so some links won&#39;t
+                  be functioning as of now!
                 </p>
               </motion.div>
             </div>
