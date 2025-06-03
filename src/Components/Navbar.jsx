@@ -77,7 +77,7 @@ const Navbar = () => {
           <motion.button
             className={`relative w-12 h-6 cursor-none rounded-full transition-colors duration-300 ${
               lightMode
-                ? "bg-gradient-to-r from-purple-600 to-blue-600"
+                ? "bg-gradient-to-r from-purple-400 to-yellow-600"
                 : "bg-gray-300"
             }`}
             onClick={toggleSwitch}

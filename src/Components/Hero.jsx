@@ -17,116 +17,6 @@ const Hero = () => {
 
   return (
     <div className="relative min-h-screen bg-black text-white overflow-hidden">
-      <style>{`
-        .hero-container {
-          padding-top: 60px;
-        }
-
-        .image-container {
-          will-change: transform;
-          transform: translateZ(0);
-        }
-
-        .navbar-glass {
-          backdrop-filter: blur(20px);
-          -webkit-backdrop-filter: blur(20px);
-          background: rgba(255, 255, 255, 0.05);
-          border: 1px solid rgba(255, 255, 255, 0.1);
-          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-        }
-
-        .social-icon {
-          width: 60px;
-          height: 60px;
-          border: 2px solid rgba(255, 255, 255, 0.2);
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          transition: all 0.3s ease;
-          margin-top: 2rem;
-          text-decoration: none;
-          color: inherit;
-        }
-
-        .social-icon:hover {
-          border-color: #a855f7;
-          background: rgba(168, 85, 247, 0.1);
-          transform: translateY(-2px);
-        }
-
-        .resume-button {
-          background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(147, 51, 234, 0.1));
-          border: 2px solid rgba(168, 85, 247, 0.3);
-          color: #a855f7;
-          padding: 12px 32px;
-          border-radius: 50px;
-          font-weight: 600;
-          font-size: 16px;
-          text-decoration: none;
-          display: inline-block;
-          transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-          position: relative;
-          overflow: hidden;
-          backdrop-filter: blur(10px);
-          -webkit-backdrop-filter: blur(10px);
-        }
-
-        .resume-button::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: -100%;
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(90deg, transparent, rgba(168, 85, 247, 0.2), transparent);
-          transition: left 0.5s;
-        }
-
-        .resume-button:hover::before {
-          left: 100%;
-        }
-
-        .resume-button:hover {
-          border-color: #a855f7;
-          background: linear-gradient(135deg, rgba(168, 85, 247, 0.2), rgba(147, 51, 234, 0.2));
-          color: #ffffff;
-          transform: translateY(-3px);
-          box-shadow: 0 10px 25px rgba(168, 85, 247, 0.3);
-        }
-
-        .resume-button:active {
-          transform: translateY(-1px);
-        }
-
-        .about-heading {
-          font-family: 'Inter', sans-serif;
-          font-weight: 600;
-          letter-spacing: -0.01em;
-          line-height: 1.3;
-        }
-
-        .about-text {
-          font-family: 'Source Sans Pro', sans-serif;
-          font-weight: 400;
-          line-height: 1.7;
-          letter-spacing: 0.01em;
-        }
-
-        .typed-text {
-          font-family: 'JetBrains Mono', monospace;
-          font-weight: 500;
-          color: #a855f7;
-        }
-
-        @media (max-width: 640px) {
-          .mobile-center {
-            text-align: center;
-            align-items: center;
-          }
-        }
-      `}</style>
-
       <div className="hero-container min-h-screen flex items-center">
         <div className="w-full max-w-7xl mx-auto px-6 md:px-10">
           <div className="md:hidden flex flex-col items-center space-y-8">
@@ -154,7 +44,6 @@ const Hero = () => {
               />
             </motion.div>
 
-            {/* Image - Shows immediately with smooth transition */}
             <motion.li
               initial={{ opacity: 0, scale: 0 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -168,7 +57,6 @@ const Hero = () => {
               />
             </motion.li>
 
-            {/* Social Icons - Shows with image animation */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -231,7 +119,6 @@ const Hero = () => {
               </motion.a>
             </motion.div>
 
-            {/* About Text - Shows with image animation */}
             <motion.div
               initial={{ opacity: 0, x: 80 }}
               animate={{ opacity: 1, x: 0 }}
@@ -255,11 +142,11 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1.0, duration: 0.6 }}
-                className="text-xl sm:text-2xl font-semibold about-heading"
+                className="text-xl sm:text-2xl font-medium about-heading"
               >
                 Hey there! <br />
                 I am a <br />
-                <span className="typed-text">
+                <span className="typed-text font-bold text-purple-800">
                   <ReactTyped
                     strings={[
                       "Web Developer",
@@ -267,6 +154,8 @@ const Hero = () => {
                       "UI/UX Designer",
                       "Debater",
                     ]}
+                    style={{ color: "#6B21A8", fontWeight: "bold" }}
+                    className=" font-bold text-purple-800"
                     typeSpeed={100}
                     startDelay={2000}
                     loop
@@ -304,10 +193,8 @@ const Hero = () => {
             </motion.div>
           </div>
 
-          {/* Desktop Layout */}
           <div className="hidden md:block relative">
             <div className="grid grid-cols-12 gap-8 items-center min-h-[80vh]">
-              {/* Left Section - Name */}
               <motion.div
                 initial={{ opacity: 0, x: -100 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -421,7 +308,6 @@ const Hero = () => {
                 />
               </motion.div>
 
-              {/* Right Section - Content */}
               <motion.div
                 initial={{ opacity: 0, x: 100 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -451,7 +337,7 @@ const Hero = () => {
                     {" "}
                     I am a <br />
                   </p>
-                  <span className="typed-text font-black">
+                  <span className="typed-text">
                     <ReactTyped
                       strings={[
                         "Web Developer",
