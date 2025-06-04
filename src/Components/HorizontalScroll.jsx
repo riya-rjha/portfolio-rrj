@@ -42,7 +42,7 @@ function ParallaxText({ children, baseVelocity = 100 }) {
   });
 
   return (
-    <div className="parallax">
+    <div className="parallax leading-tight">
       <motion.div className="scroller" style={{ x }}>
         <span>{children} </span>
         <span>{children} </span>

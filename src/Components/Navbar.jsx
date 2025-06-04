@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="fixed top-4 md:top-6 left-1/2 transform -translate-x-1/2 z-50">
+      <div className="fixed top-4 md:top-6 left-1/2 transform -translate-x-1/2 z-50 rounded-full">
         <motion.div
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -47,7 +47,10 @@ const Navbar = () => {
                     : "hover:text-purple-400"
                 }`}
               >
-                <Link to={item.path} className="text-inherit no-underline">
+                <Link
+                  to={item.path}
+                  className="text-inherit no-underline bg-transparent"
+                >
                   {item.label}
                 </Link>
               </motion.span>
@@ -56,7 +59,6 @@ const Navbar = () => {
         </motion.div>
       </div>
 
-      {/* Simple Theme Toggle Button */}
       <div className="fixed top-4 md:top-6 right-4 md:right-6 z-50">
         <motion.div
           initial={{ y: -100, opacity: 0 }}

@@ -24,12 +24,11 @@ const App = () => {
           right: 0,
           height: 4,
           transformOrigin: "left",
-          backgroundColor: "#aa49ff",
+          background: "linear-gradient(to right, #8B5CF6, #A855F7)", // Changed this line
           zIndex: 50,
         }}
         className="cursor-none"
       />
-
       <Navbar />
       <AnimatedCursor />
 
