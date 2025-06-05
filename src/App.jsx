@@ -6,9 +6,9 @@ import Articles from "./pages/Articles";
 import Designs from "./pages/Designs";
 import Projects from "./pages/Projects";
 import { motion, useScroll } from "framer-motion";
-import Navbar from "./components/Navbar";
-import AnimatedCursor from "./components/AnimatedCursor";
-import Hero from "./components/Hero.jsx";
+import Navbar from "./Components/Navbar";
+import AnimatedCursor from "./Components/AnimatedCursor";
+import Hero from "./Components/Hero.jsx";
 
 const App = () => {
   const { scrollYProgress } = useScroll();

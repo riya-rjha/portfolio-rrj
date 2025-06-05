@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
 import projects from "../data/Projects.js";
-import HorizontalScroll from "../components/HorizontalScroll.jsx";
+import HorizontalScroll from "../Components/HorizontalScroll.jsx";
 
 const Projects = () => {
   return (

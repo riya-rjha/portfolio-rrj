@@ -76,8 +76,8 @@ const Articles = () => (
             title: "Wireframe Components: Header, Menu, Footer in Figma",
             image: WireframeFigma,
             description:
-              "Learn how to create wireframe components like headers, menus, and footers in Figma ...",
-            url: "https://www.geeksforgeeks.org/wireframe-components-header-menu-footer-in-figma/?itm_source=auth&itm_medium=contributions&itm_campaign=articles",
+              "Learn how to create wireframe Components like headers, menus, and footers in Figma ...",
+            url: "https://www.geeksforgeeks.org/wireframe-Components-header-menu-footer-in-figma/?itm_source=auth&itm_medium=contributions&itm_campaign=articles",
           },
           {
             title: "How to Create Hover Effect in Figma",

@@ -422,5 +422,5 @@
 }
 
 @tailwind base;
-@tailwind components;
+@tailwind Components;
 @tailwind utilities;
