@@ -139,7 +139,7 @@ const Skills = () => {
             data-aos="flip-left"
           >
             <img
-              src="https://user-images.githubusercontent.com/25181517/183859966-a3462d8d-1bc7-4880-b353-e2cbed900ed6.png"
+              src="https://user-Images.githubusercontent.com/25181517/183859966-a3462d8d-1bc7-4880-b353-e2cbed900ed6.png"
               className="w-20 h-20"
             />
             <div
@@ -155,7 +155,7 @@ const Skills = () => {
             data-aos="flip-left"
           >
             <img
-              src="https://user-images.githubusercontent.com/25181517/121401671-49102800-c959-11eb-9f6f-74d49a5e1774.png"
+              src="https://user-Images.githubusercontent.com/25181517/121401671-49102800-c959-11eb-9f6f-74d49a5e1774.png"
               className="w-20 h-20"
             />
             <div
@@ -185,7 +185,7 @@ const Skills = () => {
             data-aos="flip-left"
           >
             <img
-              src="https://user-images.githubusercontent.com/25181517/189715289-df3ee512-6eca-463f-a0f4-c10d94a06b2f.png"
+              src="https://user-Images.githubusercontent.com/25181517/189715289-df3ee512-6eca-463f-a0f4-c10d94a06b2f.png"
               className="w-20 h-20"
             />
             <div
@@ -200,7 +200,7 @@ const Skills = () => {
             data-aos="flip-left"
           >
             <img
-              src="https://user-images.githubusercontent.com/25181517/192108372-f71d70ac-7ae6-4c0d-8395-51d8870c2ef0.png"
+              src="https://user-Images.githubusercontent.com/25181517/192108372-f71d70ac-7ae6-4c0d-8395-51d8870c2ef0.png"
               className="w-20 h-20"
             />
             <div
@@ -215,7 +215,7 @@ const Skills = () => {
             data-aos="flip-left"
           >
             <img
-              src="https://user-images.githubusercontent.com/25181517/192108374-8da61ba1-99ec-41d7-80b8-fb2f7c0a4948.png"
+              src="https://user-Images.githubusercontent.com/25181517/192108374-8da61ba1-99ec-41d7-80b8-fb2f7c0a4948.png"
               className="w-20 h-20"
             />
             <div
@@ -245,7 +245,7 @@ const Skills = () => {
             data-aos="flip-left"
           >
             <img
-              src="https://user-images.githubusercontent.com/25181517/192109061-e138ca71-337c-4019-8d42-4792fdaa7128.png"
+              src="https://user-Images.githubusercontent.com/25181517/192109061-e138ca71-337c-4019-8d42-4792fdaa7128.png"
               className="w-20 h-20"
             />
             <div

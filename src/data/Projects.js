@@ -1,9 +1,9 @@
-import TrendSpire from "../images/TrendSpire.png";
-import BlogHub from "../images/BlogApp.png";
-import CRM from "../images/AgencyWebsite.png";
-import Amazon from "../images/AmazonClone.png";
-import Recipe from "../images/RecipeApplication.png";
-import BookStore from "../images/BookStoreWebsite.png";
+import TrendSpire from "../Images/TrendSpire.png";
+import BlogHub from "../Images/BlogApp.png";
+import CRM from "../Images/AgencyWebsite.png";
+import Amazon from "../Images/AmazonClone.png";
+import Recipe from "../Images/RecipeApplication.png";
+import BookStore from "../Images/BookStoreWebsite.png";
 
 const projects = [
     {

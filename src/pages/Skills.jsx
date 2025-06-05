@@ -29,11 +29,11 @@ const Skills = () => {
     },
     {
       name: "Node.js",
-      icon: "https://user-images.githubusercontent.com/25181517/121401671-49102800-c959-11eb-9f6f-74d49a5e1774.png",
+      icon: "https://user-Images.githubusercontent.com/25181517/121401671-49102800-c959-11eb-9f6f-74d49a5e1774.png",
     },
     {
       name: "Express.js",
-      icon: "https://user-images.githubusercontent.com/25181517/183859966-a3462d8d-1bc7-4880-b353-e2cbed900ed6.png",
+      icon: "https://user-Images.githubusercontent.com/25181517/183859966-a3462d8d-1bc7-4880-b353-e2cbed900ed6.png",
     },
     {
       name: "MongoDB",
@@ -61,11 +61,11 @@ const Skills = () => {
     },
     {
       name: "Git",
-      icon: "https://user-images.githubusercontent.com/25181517/192108372-f71d70ac-7ae6-4c0d-8395-51d8870c2ef0.png",
+      icon: "https://user-Images.githubusercontent.com/25181517/192108372-f71d70ac-7ae6-4c0d-8395-51d8870c2ef0.png",
     },
     {
       name: "GitHub",
-      icon: "https://user-images.githubusercontent.com/25181517/192108374-8da61ba1-99ec-41d7-80b8-fb2f7c0a4948.png",
+      icon: "https://user-Images.githubusercontent.com/25181517/192108374-8da61ba1-99ec-41d7-80b8-fb2f7c0a4948.png",
     },
     {
       name: "Firebase",
@@ -73,11 +73,11 @@ const Skills = () => {
     },
     {
       name: "Figma",
-      icon: "https://user-images.githubusercontent.com/25181517/189715289-df3ee512-6eca-463f-a0f4-c10d94a06b2f.png",
+      icon: "https://user-Images.githubusercontent.com/25181517/189715289-df3ee512-6eca-463f-a0f4-c10d94a06b2f.png",
     },
     {
       name: "Postman",
-      icon: "https://user-images.githubusercontent.com/25181517/192109061-e138ca71-337c-4019-8d42-4792fdaa7128.png",
+      icon: "https://user-Images.githubusercontent.com/25181517/192109061-e138ca71-337c-4019-8d42-4792fdaa7128.png",
     },
     {
       name: "Basics AI",

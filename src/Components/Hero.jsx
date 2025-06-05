@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ReactTyped } from "react-typed";
 import { useState, useEffect } from "react";
-import bgImage from "../images/myImage.png";
+import bgImage from "../Images/myImage.png";
 
 const Hero = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
