@@ -1,12 +1,12 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Hero from "./components/Hero.jsx";
 import Skills from "./pages/Skills";
 import Articles from "./pages/Articles";
 import Designs from "./pages/Designs";
 import Projects from "./pages/Projects";
 import { motion, useScroll } from "framer-motion";
+import Hero from "./components/Hero.jsx";
 import Navbar from "./components/Navbar";
 import AnimatedCursor from "./components/AnimatedCursor";
 
