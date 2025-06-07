@@ -1,12 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
-import projects from "../data/Projects.js";
+import { miniProjects, projects } from "../data/Projects.js";
 import HorizontalScroll from "../Components/HorizontalScroll.jsx";
 
 const Projects = () => {
   return (
-    <div className="mt-10 px-6 py-24">
+    <div className="mt-6 px-6 py-24">
       <motion.div
         className="max-w-7xl mx-auto space-y-24"
         initial="hidden"
@@ -31,7 +31,6 @@ const Projects = () => {
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
             >
-              {/* Project Info */}
               <motion.div
                 className="flex-1 space-y-6"
                 initial="hidden"
@@ -175,7 +174,123 @@ const Projects = () => {
             </motion.div>
           </React.Fragment>
         ))}
+
         <HorizontalScroll />
+
+        <motion.div
+          className="space-y-12"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={{
+            hidden: { opacity: 0 },
+            visible: {
+              opacity: 1,
+              transition: {
+                staggerChildren: 0.2,
+              },
+            },
+          }}
+        >
+          <motion.div
+            className="grid grid-cols-1 md:grid-cols-3 gap-8"
+            variants={{
+              hidden: { opacity: 0 },
+              visible: {
+                opacity: 1,
+                transition: {
+                  staggerChildren: 0.3,
+                },
+              },
+            }}
+          >
+            {miniProjects.map((project, index) => (
+              <motion.div
+                key={index}
+                className="bg-gradient-to-br from-purple-600/10 to-pink-600/10 p-6 rounded-2xl border border-purple-500/20 hover:border-purple-500/40 transition-colors"
+                variants={{
+                  hidden: {
+                    opacity: 0,
+                    y: 50,
+                    scale: 0.9,
+                  },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    scale: 1,
+                    transition: {
+                      duration: 0.6,
+                      ease: "easeOut",
+                    },
+                  },
+                }}
+                whileHover={{
+                  scale: 1.02,
+                  transition: { duration: 0.2 },
+                }}
+                whileTap={{ scale: 0.98 }}
+              >
+                <motion.h3
+                  className="text-xl font-bold text-white mb-4"
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.1, duration: 0.5 }}
+                  viewport={{ once: true }}
+                >
+                  {project.title}
+                </motion.h3>
+
+                <motion.div
+                  className="bg-slate-700 rounded-xl aspect-video flex items-center justify-center overflow-hidden mb-4"
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: 0.2, duration: 0.5 }}
+                  viewport={{ once: true }}
+                >
+                  <img
+                    src={project.img}
+                    alt={project.title}
+                    className="w-full h-full object-contain"
+                  />
+                </motion.div>
+
+                <motion.p
+                  className="text-purple-100 text-sm leading-relaxed mb-6 break-words bg-transparent"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.3, duration: 0.5 }}
+                  viewport={{ once: true }}
+                >
+                  {project.description}
+                </motion.p>
+
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.4, duration: 0.5 }}
+                  viewport={{ once: true }}
+                  className="bg-transparent"
+                >
+                  <motion.a
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-slate-700 text-purple-300 px-4 py-2 rounded-full font-semibold text-sm hover:bg-slate-600 transition-colors"
+                    whileHover={{
+                      scale: 1.05,
+                      backgroundColor: "#475569",
+                      transition: { duration: 0.2 },
+                    }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <Github size={16} className="bg-transparent" />
+                    View GitHub
+                  </motion.a>
+                </motion.div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </motion.div>
       </motion.div>
     </div>
   );

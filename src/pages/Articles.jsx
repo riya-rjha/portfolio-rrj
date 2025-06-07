@@ -1,9 +1,12 @@
 import React from "react";
 
+
 const Articles = () => {
   return (
     <>
-      <p>Articles</p>
+      <p>
+
+      </p>
     </>
   );
 };

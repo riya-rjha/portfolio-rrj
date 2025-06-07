@@ -4,6 +4,12 @@ import CRM from "../Images/AgencyWebsite.png";
 import Amazon from "../Images/AmazonClone.png";
 import Recipe from "../Images/RecipeApplication.png";
 import BookStore from "../Images/BookStoreWebsite.png";
+import QuoteGen from "../Images/QuoteGen.png";
+import Quiz from "../Images/QuizApp.png";
+import Music from "../Images/MusicApp.png";
+import Calculator from "../Images/Calculator.png";
+import Password from "../Images/PasswordGen.png";
+import Email from "../Images/EmailValid.png";
 
 const projects = [
     {
@@ -62,4 +68,45 @@ const projects = [
     },
 ];
 
-export default projects;
+const miniProjects = [
+    {
+        name: "Music App",
+        url: "https://github.com/riya-rjha/JS-Projects/tree/main/Music%20Player",
+        img: Music,
+        description: "A visually engaging music player that lets users play, pause, and navigate tracks with smooth controls.",
+    },
+    {
+        name: "Quiz Application",
+        url: "https://github.com/riya-rjha/JS-Projects/tree/main/Quiz%20App",
+        img: Quiz,
+        description: "An interactive quiz application that evaluates users in real-time and shows score-based feedback.",
+    },
+    {
+        name: "Calculator",
+        url: "https://github.com/riya-rjha/JS-Projects/tree/main/Calculator",
+        img: Calculator,
+        description: "A modern calculator built with HTML, CSS, and JavaScript supporting all basic operations cleanly.",
+    },
+    {
+        name: "Password Generator",
+        url: "https://github.com/riya-rjha/JS-Projects/tree/main/Password%20Generator",
+        img: Password,
+        description: "Create strong, random passwords instantly using a lightweight, intuitive interface that can be copied.",
+    },
+    {
+        name: "Quote Generator",
+        url: "https://github.com/riya-rjha/JS-Projects/tree/main/Quote%20Generator",
+        img: QuoteGen,
+        description: "Displays random inspirational quotes with a button click using an external API and elegant design.",
+    },
+    {
+        name: "Email Validation",
+        url: "https://github.com/riya-rjha/JS-Projects/tree/main/Form%20Validation",
+        img: Email,
+        description: "A clean JavaScript-based utility to validate email inputs in real time with instant error feedback.",
+    }
+
+];
+
+
+export { projects, miniProjects };
