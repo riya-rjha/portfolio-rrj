@@ -1,14 +1,16 @@
 import React from "react";
+import Articles from "../Components/Articles";
+import { tech, webDesign, figma, general } from "../data/Articles.js";
 
-
-const Articles = () => {
+const ArticlesPage = () => {
   return (
-    <>
-      <p>
-
-      </p>
-    </>
+    <div>
+      <Articles tech={tech} category="tech" />
+      <Articles tech={webDesign} category="design" />
+      <Articles tech={figma} category="figma" />
+      <Articles tech={general} category="general" />
+    </div>
   );
 };
 
-export default Articles;
+export default ArticlesPage;
