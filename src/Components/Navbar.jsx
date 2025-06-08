@@ -31,9 +31,9 @@ const Navbar = () => {
         >
           <div className="flex justify-evenly items-center text-xs md:text-base font-medium text-white bg-transparent">
             {[
+              { label: "Home", path: "/" },
               { label: "Projects", path: "/projects" },
               { label: "Articles", path: "/articles" },
-              { label: "Web Designs", path: "/designs" },
               { label: "Skills", path: "/skill" },
             ].map((item, index) => (
               <motion.span

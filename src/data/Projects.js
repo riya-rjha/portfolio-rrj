@@ -1,15 +1,15 @@
-import TrendSpire from "../Images/TrendSpire.png";
-import BlogHub from "../Images/BlogApp.png";
-import CRM from "../Images/AgencyWebsite.png";
-import Amazon from "../Images/AmazonClone.png";
-import Recipe from "../Images/RecipeApplication.png";
-import BookStore from "../Images/BookStoreWebsite.png";
-import QuoteGen from "../Images/QuoteGen.png";
-import Quiz from "../Images/QuizApp.png";
-import Music from "../Images/MusicApp.png";
-import Calculator from "../Images/Calculator.png";
-import Password from "../Images/PasswordGen.png";
-import Email from "../Images/EmailValid.png";
+import TrendSpire from "../Images/projects/TrendSpire.png";
+import BlogHub from "../Images/projects/BlogApp.png";
+import Amazon from "../Images/projects/AmazonClone.png";
+import Recipe from "../Images/projects/RecipeApplication.png";
+import BookStore from "../Images/projects/BookStoreWebsite.png";
+import QuoteGen from "../Images/projects/QuoteGen.png";
+import Quiz from "../Images/projects/QuizApp.png";
+import Music from "../Images/projects/MusicApp.png";
+import Calculator from "../Images/projects/Calculator.png";
+import Password from "../Images/projects/PasswordGen.png";
+import CRM from "../Images/projects/crm.png"
+import Email from "../Images/projects/EmailValid.png";
 
 const projects = [
     {
