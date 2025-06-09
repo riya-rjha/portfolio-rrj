@@ -76,7 +76,7 @@ const Navbar = () => {
               : "backdrop-blur-md border border-gray-200/20"
           }`}
         >
-          <motion.button
+          {/* <motion.button
             className={`relative w-12 h-6 cursor-none rounded-full transition-colors duration-300 ${
               lightMode
                 ? "bg-gradient-to-r from-purple-400 to-yellow-600"
@@ -98,7 +98,7 @@ const Navbar = () => {
                 damping: 30,
               }}
             />
-          </motion.button>
+          </motion.button> */}
         </motion.div>
       </div>
     </div>

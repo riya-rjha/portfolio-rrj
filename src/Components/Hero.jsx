@@ -170,10 +170,10 @@ const Hero = () => {
                 transition={{ delay: 1.1, duration: 0.6 }}
                 className="text-gray-400 text-sm leading-relaxed about-text"
               >
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea,
-                totam iure magni voluptas, eum adipisci, laboriosam sed atque
-                tenetur deleniti ex dolores veniam quod non minus? Explicabo,
-                ducimus amet.
+                I’m a curious and creative person who enjoys solving problems
+                and building cool things. I love writing, designing, and working
+                on projects that make a difference. I’m always eager to learn,
+                work with others, and do my best in everything I take up.
               </motion.p>
 
               <motion.div
@@ -381,10 +381,10 @@ const Hero = () => {
                     Download Resume
                   </a>
                 </motion.div>
-                <p className="text-emerald-400 text-sm font-bold">
+                {/* <p className="text-emerald-400 text-sm font-bold">
                   In BETA Mode, Changes are being made so some links won&#39;t
                   be functioning as of now!
-                </p>
+                </p> */}
               </motion.div>
             </div>
           </div>
