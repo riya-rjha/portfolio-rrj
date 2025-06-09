@@ -10,6 +10,12 @@ import Calculator from "../Images/projects/Calculator.png";
 import Password from "../Images/projects/PasswordGen.png";
 import CRM from "../Images/projects/crm.png"
 import Email from "../Images/projects/EmailValid.png";
+import todo from "../Images/projects/todo.png";
+import tts from "../Images/projects/tts.png";
+import stopwatch from "../Images/projects/stopwatch.png";
+import qr from "../Images/projects/qrgen.png";
+import minical  from "../Images/projects/calendar.png";
+import image from "../Images/projects/image.png";
 
 const projects = [
     {
@@ -103,6 +109,42 @@ const miniProjects = [
         name: "Email Validation",
         url: "https://github.com/riya-rjha/JS-Projects/tree/main/Form%20Validation",
         img: Email,
+        description: "A clean JavaScript-based utility to validate email inputs in real time with instant error feedback.",
+    },
+    {
+        name: "To-Do List",
+        url: "https://github.com/riya-rjha/JS-Projects/tree/main/ToDo%20List",
+        img: todo,
+        description: "Create strong, random passwords instantly using a lightweight, intuitive interface that can be copied.",
+    },
+    {
+        name: "Text to Speech Convertor",
+        url: "https://github.com/riya-rjha/JS-Projects/tree/main/Text%20To%20Speech%20Convertor",
+        img: tts,
+        description: "Displays random inspirational quotes with a button click using an external API and elegant design.",
+    },
+    {
+        name: "Stopwatch",
+        url: "https://github.com/riya-rjha/JS-Projects/tree/main/StopWatch",
+        img: stopwatch,
+        description: "A clean JavaScript-based utility to validate email inputs in real time with instant error feedback.",
+    },
+    {
+        name: "QR Generator",
+        url: "https://github.com/riya-rjha/JS-Projects/tree/main/QR%20Generator",
+        img: qr,
+        description: "Create strong, random passwords instantly using a lightweight, intuitive interface that can be copied.",
+    },
+    {
+        name: "Mini Calendar",
+        url: "https://github.com/riya-rjha/JS-Projects/tree/main/Mini%20Calendar",
+        img: minical,
+        description: "Displays random inspirational quotes with a button click using an external API and elegant design.",
+    },
+    {
+        name: "Image Background Change Effect",
+        url: "https://github.com/riya-rjha/JS-Projects/tree/main/Image%20Background%20Change%20Effect",
+        img: image,
         description: "A clean JavaScript-based utility to validate email inputs in real time with instant error feedback.",
     }
 

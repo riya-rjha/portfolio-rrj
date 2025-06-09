@@ -250,7 +250,7 @@ const Projects = () => {
                   <img
                     src={project.img}
                     alt={project.title}
-                    className="w-full h-full object-contain"
+                    className="w-full h-full object-cover"
                   />
                 </motion.div>
 

@@ -321,7 +321,7 @@ const Articles = ({ tech, category }) => {
               {/* Navigation buttons with improved animations */}
               <motion.button
                 onClick={() => paginate(-3)}
-                className="absolute left-2 top-1/4 transform -translate-y-1/2 w-12 h-12 bg-white/20 backdrop-blur-md rounded-full border border-white/30 text-white text-xl font-bold hover:bg-white/30 transition-all duration-300 shadow-lg hover:shadow-xl z-10 flex items-center justify-center rotate-180 cursor-none"
+                className="absolute left-2 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/20 backdrop-blur-md rounded-full border border-white/30 text-white text-xl font-bold hover:bg-white/30 transition-all duration-300 shadow-lg hover:shadow-xl z-10 flex items-center justify-center rotate-180 cursor-none"
                 whileHover={{
                   scale: 1.1,
                   backgroundColor: "rgba(255,255,255,0.4)",
